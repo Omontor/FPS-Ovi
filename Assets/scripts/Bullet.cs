@@ -25,7 +25,7 @@ public class Bullet : MonoBehaviour
 
     private IEnumerator Decay()
     {
-        yield return new WaitForSeconds(lifetime);
+        yield return new WaitForSeconds(lifeTime);
 
         Deactivate();
     }
@@ -39,7 +39,6 @@ public class Bullet : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void OntriggerEnter
     void Start()
     {
         
