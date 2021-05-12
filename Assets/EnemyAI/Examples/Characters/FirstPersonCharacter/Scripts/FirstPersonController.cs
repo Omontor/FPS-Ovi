@@ -57,7 +57,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_MouseLook.Init(transform , m_Camera.transform);
         }
 
-
+        public void Jump()
+        {
+            if (!m_Jump)
+            {
+                m_Jump = true;
+            }
+        }
         // Update is called once per frame
         private void Update()
         {
@@ -82,22 +88,22 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
 
-			if(Input.GetMouseButtonDown(1))
-			{
-				m_CharacterController.height /= m_crouchFactor;
-				m_WalkSpeed /= m_crouchFactor;
-				m_RunSpeed /= m_crouchFactor;
-				transform.Find("eyes").localPosition /= m_crouchFactor;
-				transform.Find("target").localPosition /= m_crouchFactor;
-			}
-			else if(Input.GetMouseButtonUp(1))
-			{
-				m_CharacterController.height *= m_crouchFactor;
-				m_WalkSpeed *= m_crouchFactor;
-				m_RunSpeed *= m_crouchFactor;
-				transform.Find("eyes").localPosition *= m_crouchFactor;
-				transform.Find("target").localPosition *= m_crouchFactor;
-			}
+			//if(Input.GetMouseButtonDown(1))
+			//{
+				//m_CharacterController.height /= m_crouchFactor;
+				//m_WalkSpeed /= m_crouchFactor;
+				//m_RunSpeed /= m_crouchFactor;
+				//transform.Find("eyes").localPosition /= m_crouchFactor;
+				//transform.Find("target").localPosition /= m_crouchFactor;
+			//}
+			//else if(Input.GetMouseButtonUp(1))
+			//{
+				//m_CharacterController.height *= m_crouchFactor;
+				//m_WalkSpeed *= m_crouchFactor;
+				//m_RunSpeed *= m_crouchFactor;
+				//transform.Find("eyes").localPosition *= m_crouchFactor;
+				//transform.Find("target").localPosition *= m_crouchFactor;
+			//}
 		}
 
 
@@ -221,8 +227,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private void GetInput(out float speed)
         {
             // Read input
-            float horizontal = Input.GetAxis("Horizontal");
-            float vertical = Input.GetAxis("Vertical");
+            float horizontal = SimpleInput.GetAxis("Horizontal");
+            float vertical = SimpleInput.GetAxis("Vertical");
 
             bool waswalking = m_IsWalking;
 
