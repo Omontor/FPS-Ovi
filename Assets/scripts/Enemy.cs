@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] AudioClip deathSFX;
     [SerializeField] [Range(0, 1)] float deathvolume = .7f;
     
-    [SerializeField] [Range(0, 1)] float enemyshootvolume = .7f;
+    //[SerializeField] [Range(0, 1)] float enemyshootvolume = .7f;
     [SerializeField] AudioClip enemyhitSFX;
     [SerializeField] [Range(0, 1)] float enemyhitvolume = .7f;
 

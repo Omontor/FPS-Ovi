@@ -15,6 +15,8 @@ public class Weapon : MonoBehaviour
     public bool isShooting;
     public float fireSpeed;
     public float fireTimer;
+    [SerializeField] AudioClip shootbangsoundsfx;
+    [SerializeField] [Range(0, 1)] float shootbangsoundsfxvolume = .7f;
 
     void Start()
     {
@@ -29,6 +31,7 @@ public class Weapon : MonoBehaviour
 
         //pick (spawn) bullet from bulletpool
         bPool.PickFromPool(firePoint.position, bulletVelocity);
+        AudioSource.PlayClipAtPoint(shootbangsoundsfx, Camera.main.transform.position, shootbangsoundsfxvolume);
     }
 
     public void PullTrigger()
