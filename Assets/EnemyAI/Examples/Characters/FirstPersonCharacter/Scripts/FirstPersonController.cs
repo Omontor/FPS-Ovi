@@ -40,7 +40,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
-		private float m_crouchFactor = 2f;
+		//private float m_crouchFactor = 2f;
 
         // Use this for initialization
         private void Start()

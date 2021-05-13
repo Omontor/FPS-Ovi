@@ -39,6 +39,15 @@ public class Bullet : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    public void OnTriggerEnter(Collider other)
+    {
+       //THIS IS WHERE YOU PUT THE CODE TO HANDLE BULLET HITS, I.E. SHOOTING ENEMY AND REMOVING HEALTH.
+        Debug.Log("A bullet hit something");
+        Deactivate();
+    }
+
+
+
     void Start()
     {
         
