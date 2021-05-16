@@ -3,7 +3,82 @@ guid: 1c89a29cc380d294c80a818b5ed785ad
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMetal
+    second: {fileID: 2100000, guid: 0348e91865e22e24aa5f87ede218326c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BuildingWall_Red
+    second: {fileID: 2100000, guid: 1c7ad832be414ba4caafe3255b9a7ddb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door_MetalCaution_Ver2
+    second: {fileID: 2100000, guid: 8fe65bf50666c9e4fa74bb18576f11cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FloorTiles_Green
+    second: {fileID: 2100000, guid: 68fec510c48a1904790ebcb5a68af3e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor_Asphalt
+    second: {fileID: 2100000, guid: 8489ad46c7643da44b78be0d63a2ba3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor_AsphaltTechno
+    second: {fileID: 2100000, guid: 0b0618dc6245b1f46b9df93d41833749, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pillars_BlackNeon_Greenish
+    second: {fileID: 2100000, guid: dc397ba6013ca1143b1f3d85bdb9f7ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Props_CautionLines
+    second: {fileID: 2100000, guid: cf8a8561ef19a9e4887664200f8c014c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallTiles_BlackDirtBricks
+    second: {fileID: 2100000, guid: f21575b5422946548a532ef7a06a6a99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallTiles_BlackSquares
+    second: {fileID: 2100000, guid: f35670e5c485faa4aada8c00cdb73c93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallTiles_BlueBricks
+    second: {fileID: 2100000, guid: 8d9d39a0ebfc4694da363554c9892f45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallTiles_BrownBricks
+    second: {fileID: 2100000, guid: 508984c81e6a7634b82ae28a70fbe203, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallTiles_GrayBricks
+    second: {fileID: 2100000, guid: 67ef0829f76957c448758ffe25c487d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Windows_4Shape
+    second: {fileID: 2100000, guid: 369ffb2e2baab0f45aef6195f80a6e45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Windows_Open
+    second: {fileID: 2100000, guid: e56bd5ff837b75b4c9695bdf05914449, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

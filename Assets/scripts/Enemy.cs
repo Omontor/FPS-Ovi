@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] float health = 100;
-    [SerializeField] int scoreValue = 150;
+    [SerializeField] public int health = 100;
+    [SerializeField] int scoreValue = 10;
     
     //[SerializeField] GameObject deathVFX;
     
@@ -15,6 +15,8 @@ public class Enemy : MonoBehaviour
     //[SerializeField] [Range(0, 1)] float enemyshootvolume = .7f;
     [SerializeField] AudioClip enemyhitSFX;
     [SerializeField] [Range(0, 1)] float enemyhitvolume = .7f;
+
+    public GameObject zombie;
 
 
 
@@ -31,18 +33,12 @@ public class Enemy : MonoBehaviour
     }
     
     
-    private void OnTriggerEnter(Collider other)
-    {
-        DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
-        ProcessHit(damageDealer);
-        Debug.Log("i been shot");
+    
 
-    }
-
-    private void ProcessHit(DamageDealer damageDealer)
+    public void ProcessHit(int amount)
     {
-        health -= damageDealer.GetDamage();
-        damageDealer.Hit();
+        health -= amount;
+        
         AudioSource.PlayClipAtPoint(enemyhitSFX, Camera.main.transform.position, enemyhitvolume);
 
         if (health <= 0)
@@ -50,6 +46,12 @@ public class Enemy : MonoBehaviour
             Die();
         }
     }
+    
+    public int GetHealth()
+    {
+        return health;
+    }
+
 
     private void Die()
     {

@@ -17,6 +17,7 @@ public class Weapon : MonoBehaviour
     public float fireTimer;
     [SerializeField] AudioClip shootbangsoundsfx;
     [SerializeField] [Range(0, 1)] float shootbangsoundsfxvolume = .7f;
+    public ParticleSystem muzzleflash;
 
     void Start()
     {
@@ -32,14 +33,20 @@ public class Weapon : MonoBehaviour
         //pick (spawn) bullet from bulletpool
         bPool.PickFromPool(firePoint.position, bulletVelocity);
         AudioSource.PlayClipAtPoint(shootbangsoundsfx, Camera.main.transform.position, shootbangsoundsfxvolume);
+        
     }
 
     public void PullTrigger()
     {
         //fullauto-
         if (fireSpeed > 0) isShooting = true;
-
+        
+        
         else Shoot();
+        
+        muzzleflash.Emit(1);
+        
+        
     }
 
     public void ReleaseTrigger()

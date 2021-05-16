@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C2E038FA-DFD3-AC4C-ADBD-0618C2CA552E}</ProjectGuid>
+    <ProjectGuid>{3E19A67B-C50D-6EFD-BCF6-722C6AB0D4D7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,6 +53,9 @@
     <UnityVersion>2020.1.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Inventory\vp_ItemPickup.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Effects\SurfaceSystem\vp_SurfaceManager.cs" />
     <Compile Include="Assets\EnemyAI\Examples\Scripts\LevelScripts\TopDownGameManagement.cs" />
@@ -62,6 +65,7 @@
     <Compile Include="Assets\UFPS\Base\Scripts\Core\Motion\vp_Perlin.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\vp_PlayerItemDropper.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\vp_FPWeaponReloader.cs" />
+    <Compile Include="Assets\scripts\Hitbox.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\vp_FPWeaponThrower.cs" />
     <Compile Include="Assets\EnemyAI\Scripts\ScriptableObjects\Decisions\TakeCoverDecision.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\Interaction\vp_PlatformSwitch.cs" />
@@ -78,6 +82,7 @@
     <Compile Include="Assets\UFPS\Base\Scripts\Core\Utility\vp_Input.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\Motion\vp_Spring.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\Help\vp_Help.cs" />
+    <Compile Include="Assets\scripts\AIlocomotion.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Level\Spawning\vp_Respawner.cs" />
     <Compile Include="Assets\EnemyAI\Scripts\ScriptableObjects\Actions\FindCoverAction.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
@@ -92,6 +97,7 @@
     <Compile Include="Assets\EnemyAI\Examples\Scripts\PlayerScripts\HurtHUD.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\vp_CharacterController.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\vp_RagdollHandler.cs" />
+    <Compile Include="Assets\scripts\GameSession.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\vp_PlayerRespawner.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\Attributes\vp_SeparatorAttribute.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Effects\vp_FadingDecal.cs" />
@@ -100,7 +106,9 @@
     <Compile Include="Assets\EnemyAI\Scripts\EnemyScripts\HealthBillboardManager.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\EventSystem\vp_Event.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\vp_FPInput.cs" />
+    <Compile Include="Assets\scripts\Playerlvl2.cs" />
     <Compile Include="Assets\newfpscontrollerscripts\Mobile-FPS-and-TPS-controller-for-Unity-master\PlayerController.cs" />
+    <Compile Include="Assets\scripts\ZombieHealth.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\vp_FPPistolReloader.cs" />
     <Compile Include="Assets\EnemyAI\Scripts\ScriptableObjects\Decisions\HearDecision.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\vp_Gameplay.cs" />
@@ -148,11 +156,13 @@
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Inventory\vp_Inventory.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Effects\SurfaceSystem\vp_SurfaceEffect.cs" />
     <Compile Include="Assets\EnemyAI\Scripts\EnemyScripts\EnemyHealth.cs" />
+    <Compile Include="Assets\scripts\Ragdoll.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Combat\vp_Shooter.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\EventSystem\vp_Message.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\vp_FPCameraSmoothToggle.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\ComponentSystem\vp_StateManager.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\vp_WeaponHandler.cs" />
+    <Compile Include="Assets\scripts\SceneLoader.cs" />
     <Compile Include="Assets\EnemyAI\Setup\DebugAimAction.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\GUI\vp_PainHUD.cs" />
     <Compile Include="Assets\EnemyAI\Scripts\ScriptableObjects\Actions\SpotFocusAction.cs" />
@@ -178,6 +188,7 @@
     <Compile Include="Assets\UFPS\Base\Scripts\Core\Motion\vp_Spin.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\Utility\vp_TimeUtility.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Inventory\vp_UnitBankInstance.cs" />
+    <Compile Include="Assets\scripts\HealthBar.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\EventSystem\vp_EventHandler.cs" />
     <Compile Include="Assets\UFPS\VR\Scripts\vp_VRCrosshair.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Inventory\vp_ItemIdentifier.cs" />
@@ -190,11 +201,13 @@
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\vp_FPWeaponShooter.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Effects\vp_PulsingLight.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Inventory\vp_ItemInstance.cs" />
+    <Compile Include="Assets\scripts\Enemy.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\vp_CapsuleController.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\vp_FPInteractManager.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\vp_FPWeaponHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\EventSystem\vp_Attempt.cs" />
+    <Compile Include="Assets\scripts\DamageDealer.cs" />
     <Compile Include="Assets\EnemyAI\Scripts\ScriptableObjects\Action.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Effects\SurfaceSystem\vp_DecalManager.cs" />
     <Compile Include="Assets\EnemyAI\Scripts\ScriptableObjects\Decision.cs" />
@@ -219,9 +232,12 @@
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\vp_FPPlayerDamageHandler.cs" />
     <Compile Include="Assets\EnemyAI\Scripts\ScriptableObjects\State.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Demo\vp_FPSDemoManager.cs" />
+    <Compile Include="Assets\scripts\ScoreDisplay.cs" />
+    <Compile Include="Assets\scripts\Weapon.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\Motion\vp_RigidbodyImpulse.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Effects\vp_PlayerFootFXHandler.cs" />
+    <Compile Include="Assets\scripts\Player.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\ComponentSystem\vp_ComponentPreset.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\UFPS\VR\Scripts\vp_VRCameraManager.cs" />
@@ -264,6 +280,7 @@
     <Compile Include="Assets\UFPS\Base\Scripts\GUI\vp_SimpleCrosshair.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\Nokobot\Modern Guns - Handgun\_Demo Assets\SimpleShoot.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Level\Spawning\vp_RandomSpawner.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\Attributes\vp_HelpBoxAttribute.cs" />
@@ -392,6 +409,7 @@
      <None Include="Assets\UFPS\Base\Scripts\Presets\Standard\Shooter\ShooterPistol.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\SniperWeapon.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\ModernShooter.txt" />
+     <None Include="Assets\Nokobot\Modern Guns - Handgun\README.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\SniperCamera.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\WeaponsHD\AssaultRifle01\WeaponAssaultRifle01Zoom.txt" />
      <None Include="Assets\UFPS\Base\Scripts\Presets\Demo\PerspModernInput.txt" />
@@ -1131,11 +1149,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SimpleInput.Runtime.csproj">
-      <Project>{136CAFF1-CBB0-0702-6290-220685BD4560}</Project>
+      <Project>{29E36484-862C-8C70-5C0C-7C8773A6D5B3}</Project>
       <Name>SimpleInput.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="SimpleInput.Editor.csproj">
-      <Project>{8D5518C6-3C73-4FCF-CB7A-58F5E8FE532E}</Project>
+      <Project>{29A61B99-142D-EE30-E956-04E657F82D18}</Project>
       <Name>SimpleInput.Editor</Name>
     </ProjectReference>
   </ItemGroup>

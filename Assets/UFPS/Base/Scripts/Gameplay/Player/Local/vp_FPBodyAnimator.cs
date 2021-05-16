@@ -114,17 +114,17 @@ public class vp_FPBodyAnimator : vp_BodyAnimator
 		return;
 #endif
 
-		base.Awake();
+//		base.Awake();
 
-		InitMaterials();
+//		InitMaterials();
 
-		m_WasFirstPersonLastFrame = Player.IsFirstPerson.Get();
+//		m_WasFirstPersonLastFrame = Player.IsFirstPerson.Get();
 
 		// prevent camera from doing its own collision. (we'll do it
 		// from this script's 'UpdateCamera' method instead)
-		FPCamera.HasCollision = false;
+//		FPCamera.HasCollision = false;
 
-		Player.IsFirstPerson.Set(true);
+//		Player.IsFirstPerson.Set(true);
 
 	}
 	
