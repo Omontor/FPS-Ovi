@@ -32,4 +32,8 @@ public class Ragdoll : MonoBehaviour
         }
         animator.enabled = false;
     }
+    
+    
+
 }
+

@@ -14,6 +14,7 @@ public class AIlocomotion : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
     }

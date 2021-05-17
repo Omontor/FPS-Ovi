@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] public int health = 100;
     [SerializeField] int scoreValue = 10;
     
+    
     //[SerializeField] GameObject deathVFX;
     
     [SerializeField] AudioClip deathSFX;
@@ -17,19 +18,33 @@ public class Enemy : MonoBehaviour
     [SerializeField] [Range(0, 1)] float enemyhitvolume = .7f;
 
     public GameObject zombie;
+    Ragdoll ragdoll;
+    SkinnedMeshRenderer skinnedMeshRenderer;
+
+    public float blinkIntensity;
+    public float blinkDuration;
+    float blinkTimer;
+    
 
 
-
+    private void Awake()
+    {
+        
+    }
 
     void Start()
     {
-        
+        ragdoll = GetComponent<Ragdoll>();
+        skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        blinkTimer -= Time.deltaTime;
+        float lerp = Mathf.Clamp01(blinkTimer / blinkDuration);
+        float intensity = (lerp * blinkIntensity) +1.0f;
+        skinnedMeshRenderer.material.color = Color.white * intensity;
     }
     
     
@@ -44,7 +59,10 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Die();
+           
         }
+        blinkTimer = blinkDuration;
+        
     }
     
     public int GetHealth()
@@ -55,9 +73,17 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-        FindObjectOfType<GameSession>().AddToScore(scoreValue);
-        Destroy(gameObject);
+        
+
+        ragdoll.ActivateRagdoll();
         
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathvolume);
+        
+        gameObject.GetComponent<AIlocomotion>().enabled = false;
+        FindObjectOfType<GameSession>().AddToScore(scoreValue);
+        
+        Destroy(gameObject, 2);
     }
+
+   
 }
