@@ -11,10 +11,11 @@ public class AIlocomotion : MonoBehaviour
     NavMeshAgent agent;
     Animator animator;
     float timer = 0.0f;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerTransform = GameObject.FindWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
     }
