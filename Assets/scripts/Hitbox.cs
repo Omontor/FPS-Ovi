@@ -21,7 +21,7 @@ public class Hitbox : MonoBehaviour
         
         if (collider.gameObject.tag == "bullet")
         {
-            zombie.GetComponent<Enemy>().ProcessHit(10);
+            zombie.GetComponent<Enemy>().ProcessHit(25);
             Debug.Log("i been shot");
             
             Destroy(collider.gameObject);

@@ -31,7 +31,7 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RandomTime = Random.Range(15, 30);
+        RandomTime = Random.Range(10, 20);
     }
 
     IEnumerator RandomSpawn()
