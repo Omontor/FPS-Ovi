@@ -6,11 +6,11 @@ public class Ragdoll : MonoBehaviour
 {
     Rigidbody[] rigidBodies;
     Animator animator;
-
+    
     // Start is called before the first frame update
     void Start()
     {
-        rigidBodies = GetComponentsInChildren<Rigidbody>();
+        rigidBodies = GetComponentsInParent<Rigidbody>();
         
         animator = GetComponent<Animator>();
 
@@ -36,8 +36,9 @@ public class Ragdoll : MonoBehaviour
     
     public void ApplyForce(Vector3 force)
     {
-        var rigidBody = animator.GetBoneTransform(HumanBodyBones.Hips).GetComponent<Rigidbody>();
-        rigidBody.AddForce(force, ForceMode.VelocityChange);
+        var zombiehips = gameObject.transform.Find("Zombie:Hips");
+        zombiehips.GetComponent<Rigidbody>().AddForce(force,ForceMode.VelocityChange);
+        
     }
 
 }

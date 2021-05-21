@@ -6,7 +6,7 @@ public class ZombieHealth : MonoBehaviour
 {
     public float maxHealth;
     public float currentHealth;
-    [SerializeField] int scoreValue = 10;
+    [SerializeField] int scoreValue = 1;
     Ragdoll ragdoll;
 
     public float blinkIntensity;
@@ -15,9 +15,11 @@ public class ZombieHealth : MonoBehaviour
     public float dieForce;
     UIHealthbar healthbar;
     SkinnedMeshRenderer skinnedMeshRenderer;
-
+    public bool isAlive;
+    public int zombieDamage = 5;
     [SerializeField] AudioClip deathSFX;
     [SerializeField] [Range(0, 1)] float deathvolume = .7f;
+    public AudioSource audioSource;
 
     //[SerializeField] [Range(0, 1)] float enemyshootvolume = .7f;
     [SerializeField] AudioClip enemyhitSFX;
@@ -25,6 +27,7 @@ public class ZombieHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         ragdoll = GetComponent<Ragdoll>();
         var rigidBodies = GetComponentsInChildren<Rigidbody>();
         skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
@@ -35,6 +38,7 @@ public class ZombieHealth : MonoBehaviour
             hitboxbetter.health = this;
         }
         currentHealth = maxHealth;
+        isAlive=true;
     }
 
     // Update is called once per frame
@@ -58,19 +62,29 @@ public class ZombieHealth : MonoBehaviour
         AudioSource.PlayClipAtPoint(enemyhitSFX, Camera.main.transform.position, enemyhitvolume);
 
     }
+    
+    
+
+
+
 
     public void Die(Vector3 direction)
     {
+        isAlive=false;
         ragdoll.ActivateRagdoll();
-        direction.y = 15;
-        //ragdoll.ApplyForce(direction * dieForce);
+        direction.y = 1;
+        ragdoll.ApplyForce(direction * dieForce);
         healthbar.gameObject.SetActive(false);
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathvolume);
-
+        StopNoise();
         gameObject.GetComponent<AIlocomotion>().enabled = false;
         FindObjectOfType<GameSession>().AddToScore(scoreValue);
 
-        Destroy(gameObject, 1);
+        Destroy(gameObject, 3);
 
+    }
+    public void StopNoise()
+    {
+        audioSource.Stop();
     }
 }

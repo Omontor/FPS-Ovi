@@ -46,7 +46,7 @@ public class Playerlvl2 : MonoBehaviour
     {
         SetUpMoveBoundaries();
         currentHealth = maxHealth;
-        healthBar.SetMaxHealth(currentHealth);
+       // healthBar.SetMaxHealth(currentHealth);
     }
 
     private void SetUpMoveBoundaries()
@@ -189,7 +189,7 @@ public class Playerlvl2 : MonoBehaviour
         currentHealth -= damageDealer.GetDamage();
 
         damageDealer.Hit();
-        healthBar.SetHealth(currentHealth);
+        //healthBar.SetHealth(currentHealth);
         AudioSource.PlayClipAtPoint(playerhitSFX, Camera.main.transform.position, playerhitvolume);
         if (currentHealth <= 0)
         {

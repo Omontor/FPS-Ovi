@@ -8,49 +8,55 @@ public class RaycastShoot : MonoBehaviour
     public int gunDamage = 25;
     public float fireRate = .25f;
     public float weaponRange = 50.0f;
-    public float hitForce = 100f;
+    public float force = 100f;
     public Transform gunEnd;
     private Camera fpsCam;
     private WaitForSeconds shotDuration = new WaitForSeconds(.07f);
-    private AudioSource gunAudio;
+    public AudioSource gunAudio;
     private LineRenderer laserLine;
     private float nextFire;
+    public GameObject muzzle;
     Ray ray;
     public bool isShooting;
+    public ParticleSystem muzzleflash;
     void Start()
     {
         laserLine = GetComponent<LineRenderer>();
         gunAudio = GetComponent<AudioSource>();
         fpsCam = GetComponentInParent<Camera>();
+        muzzle = GameObject.Find("muzzle");
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown ("Fire1") && Time.time >nextFire)
+        if (isShooting && Time.time >nextFire)
         {
             nextFire = Time.time + fireRate;
             StartCoroutine(ShotEffect());
-            Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
+            Vector3 rayOrigin = new Vector3(muzzle.transform.position.x, muzzle.transform.position.y, muzzle.transform.position.z);
             RaycastHit hit;
 
             laserLine.SetPosition(0, gunEnd.position);
 
-            if(Physics.Raycast(rayOrigin,fpsCam.transform.forward, out hit, weaponRange))
+            if(Physics.Raycast(rayOrigin,muzzle.transform.forward, out hit, weaponRange))
             {
                 laserLine.SetPosition(1, hit.point);
             }
-            else
-            {
-                laserLine.SetPosition(1, rayOrigin + (fpsCam.transform.forward * weaponRange));
-            }
+           
             var hitBox = hit.collider.GetComponent<Hitboxbetter>();
             if (hitBox)
             {
                 hitBox.OnRaycastHit(this, ray.direction);
             }
+            else
+            {
+                laserLine.SetPosition(1, rayOrigin + (muzzle.transform.forward * weaponRange));
+            }
+            isShooting = false;
         }
+
     }
     private IEnumerator ShotEffect()
     {
@@ -58,5 +64,10 @@ public class RaycastShoot : MonoBehaviour
         laserLine.enabled = true;
         yield return shotDuration;
         laserLine.enabled = false;
+    }
+    public void Shoot()
+    {
+        isShooting = true;
+        muzzleflash.Emit(1);
     }
 }

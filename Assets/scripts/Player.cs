@@ -6,19 +6,22 @@ public class Player : MonoBehaviour
 {
     [Header("Player")]
 
-    [SerializeField] public int maxHealth = 1000;
+    public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
 
-    [SerializeField] AudioClip playerhitSFX;
-    [SerializeField] [Range(0, 1)] float playerhitvolume = .7f;
-
-
+    
+    [SerializeField] AudioClip playertakedamageSFX;
+    
+    [SerializeField] [Range(0, 1)] float playertakedamagevolume = .7f;
+    public GameObject zombie;
+    
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(currentHealth);
+        zombie = GameObject.Find  ("Zombie") ;
     }
 
     // Update is called once per frame
@@ -27,32 +30,47 @@ public class Player : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+ 
+
+    public void PlayerTakeDamage(int amount)
     {
-        DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
-        ProcessHit(damageDealer);
-
-
-    }
-    void ProcessHit(DamageDealer damageDealer)
-    {
-        currentHealth -= damageDealer.GetDamage();
-
-        damageDealer.Hit();
-        healthBar.SetHealth(currentHealth);
-        AudioSource.PlayClipAtPoint(playerhitSFX, Camera.main.transform.position, playerhitvolume);
-        if (currentHealth <= 0)
+        currentHealth -= amount;
+        if(currentHealth<=amount)
         {
             Die();
-
         }
+    }
+    void OnCollisionEnter(Collision other)
+    {
+        
+        if (other.collider.gameObject.CompareTag("Zombie"))
+        {
+            //ZombieHealth zombieHealth = other.gameObject.GetComponent<ZombieHealth>();
+            
+            //if(GameObject.Find("Zombie").isAlive==true)
+            {
+                PlayerTakeDamage(5);
+                healthBar.SetHealth(currentHealth);
+                AudioSource.PlayClipAtPoint(playertakedamageSFX, Camera.main.transform.position, playertakedamagevolume );
+            }
+            
+            
+            
+        }
+
+    }
+    public void AddtoHealth(int amount)
+    {
+        currentHealth += amount;
     }
 
     private void Die()
     {
         //FindObjectOfType<SceneLoader>().LoadGameOver();
-        
-        Destroy(gameObject);
+        Debug.Log("u dead");
+        FindObjectOfType<SceneLoader>().LoadNextScene();
+        //Destroy(gameObject);
+        FindObjectOfType<GameSession>().ResetGame();
         
     }
 }
