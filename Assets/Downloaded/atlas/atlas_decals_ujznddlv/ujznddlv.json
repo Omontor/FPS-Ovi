@@ -1,0 +1,752 @@
+{
+  "pack": {
+    "_id": "graffiti",
+    "name": "Graffiti"
+  },
+  "semanticTags": {
+    "subject_matter": "manmade",
+    "name": "Graffiti Tag",
+    "latin_name": [],
+    "asset_type": "decal",
+    "contains": [
+      "Spray Paint",
+      "Graffiti"
+    ],
+    "theme": [
+      "Streets",
+      "walls",
+      "urban",
+      "Rural",
+      "Alleys",
+      "Art",
+      "Mural",
+      " sub-urban",
+      " parking lots",
+      " abandoned areas",
+      " defacement",
+      " vandalism",
+      " trains",
+      " subways"
+    ],
+    "descriptive": [
+      "Art",
+      "painted",
+      "white",
+      " tagged",
+      "sprayed"
+    ],
+    "environment": [
+      "urban"
+    ],
+    "season": [],
+    "interior_exterior": [
+      "exterior"
+    ],
+    "orientation": [
+      "wall"
+    ],
+    "architectural_style": {},
+    "state": [
+      "new"
+    ],
+    "country": "Sweden",
+    "region": "Europe",
+    "color": [
+      "Green"
+    ],
+    "industry": [
+      "games",
+      "archviz",
+      "VFX"
+    ],
+    "resolution": 8192,
+    "locations": {
+      "Europe": {
+        "Sweden": {}
+      }
+    },
+    "maxSize": 1,
+    "minSize": 1
+  },
+  "tags": [
+    "decal",
+    "green",
+    "street art",
+    "graffiti",
+    "spray paint"
+  ],
+  "previews": {
+    "images": [
+      {
+        "contentLength": 130237,
+        "resolution": "360x360",
+        "uri": "ujznddlv_Grid_360.png",
+        "tags": [
+          "thumb"
+        ]
+      },
+      {
+        "contentLength": 169175,
+        "resolution": "420x420",
+        "uri": "ujznddlv_Grid_420.png",
+        "tags": [
+          "thumb"
+        ]
+      },
+      {
+        "contentLength": 454004,
+        "resolution": "720x720",
+        "uri": "ujznddlv_Grid_720.png",
+        "tags": [
+          "thumb",
+          "retina"
+        ]
+      },
+      {
+        "contentLength": 601429,
+        "resolution": "840x840",
+        "uri": "ujznddlv_Grid_840.png",
+        "tags": [
+          "thumb",
+          "retina"
+        ]
+      },
+      {
+        "contentLength": 1676108,
+        "resolution": "1440x768",
+        "uri": "ujznddlv_PopupClay_1440.png",
+        "tags": [
+          "preview",
+          "clay"
+        ]
+      },
+      {
+        "contentLength": 3056391,
+        "resolution": "1920x1080",
+        "uri": "ujznddlv_PopupClay_1920.png",
+        "tags": [
+          "preview",
+          "clay"
+        ]
+      },
+      {
+        "contentLength": 6394671,
+        "resolution": "2880x1536",
+        "uri": "ujznddlv_PopupClay_2880.png",
+        "tags": [
+          "preview",
+          "clay",
+          "retina"
+        ]
+      },
+      {
+        "contentLength": 11016299,
+        "resolution": "3840x2160",
+        "uri": "ujznddlv_PopupClay_3840.png",
+        "tags": [
+          "preview",
+          "clay",
+          "retina"
+        ]
+      },
+      {
+        "contentLength": 1643609,
+        "resolution": "1440x768",
+        "uri": "ujznddlv_Popup_1440.png",
+        "tags": [
+          "preview"
+        ]
+      },
+      {
+        "contentLength": 3038413,
+        "resolution": "1920x1080",
+        "uri": "ujznddlv_Popup_1920.png",
+        "tags": [
+          "preview"
+        ]
+      },
+      {
+        "contentLength": 6339803,
+        "resolution": "2880x1536",
+        "uri": "ujznddlv_Popup_2880.png",
+        "tags": [
+          "preview",
+          "retina"
+        ]
+      },
+      {
+        "contentLength": 11617321,
+        "resolution": "3840x2160",
+        "uri": "ujznddlv_Popup_3840.png",
+        "tags": [
+          "preview",
+          "retina"
+        ]
+      },
+      {
+        "contentLength": 786,
+        "resolution": "24x24",
+        "uri": "OklDPU9JQ0xDQEU/OQMDA0dCPiMdF1BJQz41LElFRAUEBAQDAwQEBAcHBzg4ORgWFR0cHCkpKQ8PDS0tLjMyNCEhISUlJT4+Py0kHRQbCDoxJkVFRjlQDqK2NCY3CmONDUZsBqHNHnmKMFFVOWp1M1FfJI2jL9DvL70nq1IAAAATdFJOUwD7RXblUl5BCxtauP51wtHRuer/yyWSAAABMklEQVQoz12S15KDMAxFTTUtpGBTTDGYGkj+//dWFsPARo86I+leSYQc4VPHoT75Cc8NbcZYbYeud83TOxOFEEC67k7P/M0QRYGA1YBuZ77Nsmwn9YVQyFdlhQTQ8u467ObFbVOmZaUJW9/is9TdXStwjSbiHEm2fnux9iDBBRC2DR9UCiTLtm/P3hqE4MuGgnHeOBKDCQDgx4fRTSSnUfG9pkDAakoc6JTnMtcApa29Vu0gSJIkR6IF9EsBxCF0Bwcpt9nQTinxDWg1SCCgOU3bedFOYTiJAahJYg1X8we3E2uD0EqqSQ3DoMZ5qXAH2qBnwww5qGkax1GhtsrGozgRDpcQqACQua/XypMj9ByeWsdBrCS5Ius8ofk4ycP89wzB86Wzr2fg/T6KbwaBeb7PH0ldJ7AWTVcwAAAAAElFTkSuQmCC",
+        "tags": [
+          "thumb",
+          "tiny"
+        ]
+      },
+      {
+        "contentLength": 18709,
+        "resolution": "360x360",
+        "uri": "ujznddlv_Grid_360_thumb.jpg",
+        "tags": [
+          "thumb",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 23914,
+        "resolution": "420x420",
+        "uri": "ujznddlv_Grid_420_thumb.jpg",
+        "tags": [
+          "thumb",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 57645,
+        "resolution": "720x720",
+        "uri": "ujznddlv_Grid_720_thumb.jpg",
+        "tags": [
+          "thumb",
+          "retina",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 73748,
+        "resolution": "840x840",
+        "uri": "ujznddlv_Grid_840_thumb.jpg",
+        "tags": [
+          "thumb",
+          "retina",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 85959,
+        "resolution": "1440x768",
+        "uri": "ujznddlv_PopupClay_1440_preview.jpg",
+        "tags": [
+          "preview",
+          "clay",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 156563,
+        "resolution": "1920x1080",
+        "uri": "ujznddlv_PopupClay_1920_preview.jpg",
+        "tags": [
+          "preview",
+          "clay",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 329181,
+        "resolution": "2880x1536",
+        "uri": "ujznddlv_PopupClay_2880_preview.jpg",
+        "tags": [
+          "preview",
+          "clay",
+          "retina",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 792807,
+        "resolution": "3840x2160",
+        "uri": "ujznddlv_PopupClay_3840_preview.jpg",
+        "tags": [
+          "preview",
+          "clay",
+          "retina",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 106115,
+        "resolution": "1440x768",
+        "uri": "ujznddlv_Popup_1440_preview.jpg",
+        "tags": [
+          "preview",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 194139,
+        "resolution": "1920x1080",
+        "uri": "ujznddlv_Popup_1920_preview.jpg",
+        "tags": [
+          "preview",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 398077,
+        "resolution": "2880x1536",
+        "uri": "ujznddlv_Popup_2880_preview.jpg",
+        "tags": [
+          "preview",
+          "retina",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 943048,
+        "resolution": "3840x2160",
+        "uri": "ujznddlv_Popup_3840_preview.jpg",
+        "tags": [
+          "preview",
+          "retina",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 57669,
+        "resolution": "1280x720",
+        "uri": "ujznddlv_Popup_3840_sp.jpg",
+        "tags": [
+          "jpeg",
+          "sidepanel"
+        ]
+      }
+    ],
+    "scaleReferences": [],
+    "relativeSize": "1x1"
+  },
+  "environment": {
+    "biome": "urban",
+    "region": "Europe"
+  },
+  "maps": [
+    {
+      "mimeType": "image/x-exr",
+      "minIntensity": 147,
+      "bitDepth": 16,
+      "name": "Albedo",
+      "resolution": "1024x1024",
+      "contentLength": 761696,
+      "colorSpace": "sRGB",
+      "uri": "ujznddlv_1K_Albedo.exr",
+      "physicalSize": "1x1",
+      "maxIntensity": 162,
+      "type": "albedo",
+      "averageColor": "#92C019"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "minIntensity": 147,
+      "bitDepth": 8,
+      "name": "Albedo",
+      "resolution": "1024x1024",
+      "contentLength": 112053,
+      "colorSpace": "sRGB",
+      "uri": "ujznddlv_1K_Albedo.jpg",
+      "physicalSize": "1x1",
+      "maxIntensity": 162,
+      "type": "albedo",
+      "averageColor": "#92C019"
+    },
+    {
+      "mimeType": "image/x-exr",
+      "minIntensity": 0,
+      "bitDepth": 32,
+      "name": "Opacity",
+      "resolution": "1024x1024",
+      "contentLength": 2044251,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_1K_Opacity.exr",
+      "physicalSize": "1x1",
+      "maxIntensity": 255,
+      "type": "opacity",
+      "averageColor": "#181818"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "minIntensity": 0,
+      "bitDepth": 8,
+      "name": "Opacity",
+      "resolution": "1024x1024",
+      "contentLength": 222361,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_1K_Opacity.jpg",
+      "physicalSize": "1x1",
+      "maxIntensity": 255,
+      "type": "opacity",
+      "averageColor": "#181818"
+    },
+    {
+      "mimeType": "image/x-exr",
+      "minIntensity": 56,
+      "bitDepth": 16,
+      "name": "Specular",
+      "resolution": "1024x1024",
+      "contentLength": 512451,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_1K_Specular.exr",
+      "physicalSize": "1x1",
+      "maxIntensity": 58,
+      "type": "specular",
+      "averageColor": "#383838"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "minIntensity": 56,
+      "bitDepth": 8,
+      "name": "Specular",
+      "resolution": "1024x1024",
+      "contentLength": 89449,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_1K_Specular.jpg",
+      "physicalSize": "1x1",
+      "maxIntensity": 58,
+      "type": "specular",
+      "averageColor": "#383838"
+    },
+    {
+      "mimeType": "image/x-exr",
+      "minIntensity": 147,
+      "bitDepth": 16,
+      "name": "Albedo",
+      "resolution": "2048x2048",
+      "contentLength": 2754421,
+      "colorSpace": "sRGB",
+      "uri": "ujznddlv_2K_Albedo.exr",
+      "physicalSize": "1x1",
+      "maxIntensity": 162,
+      "type": "albedo",
+      "averageColor": "#92C019"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "minIntensity": 147,
+      "bitDepth": 8,
+      "name": "Albedo",
+      "resolution": "2048x2048",
+      "contentLength": 428193,
+      "colorSpace": "sRGB",
+      "uri": "ujznddlv_2K_Albedo.jpg",
+      "physicalSize": "1x1",
+      "maxIntensity": 162,
+      "type": "albedo",
+      "averageColor": "#92C019"
+    },
+    {
+      "mimeType": "image/x-exr",
+      "minIntensity": 0,
+      "bitDepth": 32,
+      "name": "Opacity",
+      "resolution": "2048x2048",
+      "contentLength": 6033089,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_2K_Opacity.exr",
+      "physicalSize": "1x1",
+      "maxIntensity": 255,
+      "type": "opacity",
+      "averageColor": "#181818"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "minIntensity": 0,
+      "bitDepth": 8,
+      "name": "Opacity",
+      "resolution": "2048x2048",
+      "contentLength": 758022,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_2K_Opacity.jpg",
+      "physicalSize": "1x1",
+      "maxIntensity": 255,
+      "type": "opacity",
+      "averageColor": "#181818"
+    },
+    {
+      "mimeType": "image/x-exr",
+      "minIntensity": 56,
+      "bitDepth": 16,
+      "name": "Specular",
+      "resolution": "2048x2048",
+      "contentLength": 1962285,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_2K_Specular.exr",
+      "physicalSize": "1x1",
+      "maxIntensity": 58,
+      "type": "specular",
+      "averageColor": "#383838"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "minIntensity": 56,
+      "bitDepth": 8,
+      "name": "Specular",
+      "resolution": "2048x2048",
+      "contentLength": 275723,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_2K_Specular.jpg",
+      "physicalSize": "1x1",
+      "maxIntensity": 58,
+      "type": "specular",
+      "averageColor": "#383838"
+    },
+    {
+      "mimeType": "image/x-exr",
+      "minIntensity": 147,
+      "bitDepth": 16,
+      "name": "Albedo",
+      "resolution": "4096x4096",
+      "contentLength": 9691524,
+      "colorSpace": "sRGB",
+      "uri": "ujznddlv_4K_Albedo.exr",
+      "physicalSize": "1x1",
+      "maxIntensity": 162,
+      "type": "albedo",
+      "averageColor": "#92C019"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "minIntensity": 147,
+      "bitDepth": 8,
+      "name": "Albedo",
+      "resolution": "4096x4096",
+      "contentLength": 1629211,
+      "colorSpace": "sRGB",
+      "uri": "ujznddlv_4K_Albedo.jpg",
+      "physicalSize": "1x1",
+      "maxIntensity": 162,
+      "type": "albedo",
+      "averageColor": "#92C019"
+    },
+    {
+      "mimeType": "image/x-exr",
+      "minIntensity": 0,
+      "bitDepth": 32,
+      "name": "Opacity",
+      "resolution": "4096x4096",
+      "contentLength": 17962516,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_4K_Opacity.exr",
+      "physicalSize": "1x1",
+      "maxIntensity": 255,
+      "type": "opacity",
+      "averageColor": "#181818"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "minIntensity": 0,
+      "bitDepth": 8,
+      "name": "Opacity",
+      "resolution": "4096x4096",
+      "contentLength": 2825939,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_4K_Opacity.jpg",
+      "physicalSize": "1x1",
+      "maxIntensity": 255,
+      "type": "opacity",
+      "averageColor": "#181818"
+    },
+    {
+      "mimeType": "image/x-exr",
+      "minIntensity": 56,
+      "bitDepth": 16,
+      "name": "Specular",
+      "resolution": "4096x4096",
+      "contentLength": 7242455,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_4K_Specular.exr",
+      "physicalSize": "1x1",
+      "maxIntensity": 58,
+      "type": "specular",
+      "averageColor": "#383838"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "minIntensity": 56,
+      "bitDepth": 8,
+      "name": "Specular",
+      "resolution": "4096x4096",
+      "contentLength": 1075785,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_4K_Specular.jpg",
+      "physicalSize": "1x1",
+      "maxIntensity": 58,
+      "type": "specular",
+      "averageColor": "#383838"
+    },
+    {
+      "mimeType": "image/x-exr",
+      "minIntensity": 147,
+      "bitDepth": 16,
+      "name": "Albedo",
+      "resolution": "8192x8192",
+      "contentLength": 32461404,
+      "colorSpace": "sRGB",
+      "uri": "ujznddlv_8K_Albedo.exr",
+      "physicalSize": "1x1",
+      "maxIntensity": 162,
+      "type": "albedo",
+      "averageColor": "#92C019"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "minIntensity": 147,
+      "bitDepth": 8,
+      "name": "Albedo",
+      "resolution": "8192x8192",
+      "contentLength": 4928582,
+      "colorSpace": "sRGB",
+      "uri": "ujznddlv_8K_Albedo.jpg",
+      "physicalSize": "1x1",
+      "maxIntensity": 162,
+      "type": "albedo",
+      "averageColor": "#92C019"
+    },
+    {
+      "mimeType": "image/x-exr",
+      "minIntensity": 0,
+      "bitDepth": 32,
+      "name": "Opacity",
+      "resolution": "8192x8192",
+      "contentLength": 18972099,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_8K_Opacity.exr",
+      "physicalSize": "1x1",
+      "maxIntensity": 255,
+      "type": "opacity",
+      "averageColor": "#181818"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "minIntensity": 0,
+      "bitDepth": 8,
+      "name": "Opacity",
+      "resolution": "8192x8192",
+      "contentLength": 9250859,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_8K_Opacity.jpg",
+      "physicalSize": "1x1",
+      "maxIntensity": 255,
+      "type": "opacity",
+      "averageColor": "#181818"
+    },
+    {
+      "mimeType": "image/x-exr",
+      "minIntensity": 56,
+      "bitDepth": 16,
+      "name": "Specular",
+      "resolution": "8192x8192",
+      "contentLength": 24075016,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_8K_Specular.exr",
+      "physicalSize": "1x1",
+      "maxIntensity": 58,
+      "type": "specular",
+      "averageColor": "#383838"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "minIntensity": 56,
+      "bitDepth": 8,
+      "name": "Specular",
+      "resolution": "8192x8192",
+      "contentLength": 4038658,
+      "colorSpace": "Linear",
+      "uri": "ujznddlv_8K_Specular.jpg",
+      "physicalSize": "1x1",
+      "maxIntensity": 58,
+      "type": "specular",
+      "averageColor": "#383838"
+    }
+  ],
+  "json": {
+    "contentLength": 12517,
+    "uri": "ujznddlv.json"
+  },
+  "points": 1,
+  "meta": [
+    {
+      "key": "scanArea",
+      "name": "Scan Area",
+      "value": "1x1 m"
+    },
+    {
+      "key": "height",
+      "name": "Height",
+      "value": "0 m"
+    },
+    {
+      "key": "tileable",
+      "name": "Tileable",
+      "value": false
+    },
+    {
+      "key": "tiling_directions",
+      "name": "Tiling Directions",
+      "value": []
+    },
+    {
+      "key": "texelDensity",
+      "name": "Texel Density",
+      "value": "8192 px/m"
+    },
+    {
+      "key": "calibration",
+      "name": "Calibration",
+      "value": "GretagMacbeth ColorChecker Color Rendition Chart"
+    },
+    {
+      "key": "scanner",
+      "name": "Scanner",
+      "value": "MKX"
+    }
+  ],
+  "categories": [
+    "atlas",
+    "decals"
+  ],
+  "version": 2,
+  "references": [],
+  "referencePreviews": {
+    "maps": [
+      {
+        "mimeType": "image/jpeg",
+        "resolution": "1024x1024",
+        "contentLength": 112053,
+        "type": "albedo",
+        "uri": ""
+      },
+      {
+        "mimeType": "image/jpeg",
+        "resolution": "1024x1024",
+        "contentLength": 222361,
+        "type": "opacity",
+        "uri": ""
+      },
+      {
+        "mimeType": "image/jpeg",
+        "resolution": "1024x1024",
+        "contentLength": 89449,
+        "type": "specular",
+        "uri": ""
+      }
+    ]
+  },
+  "properties": [],
+  "averageColor": "#000000",
+  "name": "Graffiti Tag",
+  "assetCategories": {
+    "decal": {
+      "graffiti": {}
+    }
+  },
+  "revision": 0,
+  "id": "ujznddlv",
+  "physicalSize": null
+}

@@ -11,7 +11,9 @@ public class AIlocomotion : MonoBehaviour
     NavMeshAgent agent;
     Animator animator;
     float timer = 0.0f;
-    
+    public bool isAttacking = false;
+    public AudioClip attack;
+    public float attackVolume;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,7 @@ public class AIlocomotion : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
+        float distance = Vector3.Distance(agent.nextPosition, playerTransform.position);
         if(timer < 0.0f)
         {
             float sqDistance = (playerTransform.position - agent.destination).sqrMagnitude;
@@ -35,5 +38,15 @@ public class AIlocomotion : MonoBehaviour
         }
         
         animator.SetFloat("Speed", agent.velocity.magnitude);
+        if(distance <=1.65)
+        {
+            animator.SetBool("isAttacking", true);
+            AudioSource.PlayClipAtPoint(attack, agent.transform.position, attackVolume);
+        }
+        if(distance >1.7)
+        {
+            animator.SetBool("isAttacking", false);
+        }
     }
+    
 }

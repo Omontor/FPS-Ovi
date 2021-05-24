@@ -9,7 +9,7 @@ public class Hitboxbetter : MonoBehaviour
     public void OnRaycastHit(RaycastShoot raycastShoot, Vector3 direction)
     {
         health.TakeDamage(raycastShoot.gunDamage, direction);
-        FindObjectOfType<Player>().AddtoHealth(5);
+        FindObjectOfType<Player>().AddtoHealth(1);
         FindObjectOfType<HealthBar>().SetHealth(FindObjectOfType<Player>().currentHealth);
     }
     // Start is called before the first frame update

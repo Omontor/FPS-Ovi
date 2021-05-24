@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
             
             //if(GameObject.Find("Zombie").isAlive==true)
             {
-                PlayerTakeDamage(5);
+                PlayerTakeDamage(2);
                 healthBar.SetHealth(currentHealth);
                 AudioSource.PlayClipAtPoint(playertakedamageSFX, Camera.main.transform.position, playertakedamagevolume );
             }

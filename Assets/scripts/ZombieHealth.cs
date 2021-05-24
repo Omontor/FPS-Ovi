@@ -20,6 +20,7 @@ public class ZombieHealth : MonoBehaviour
     [SerializeField] AudioClip deathSFX;
     [SerializeField] [Range(0, 1)] float deathvolume = .7f;
     public AudioSource audioSource;
+    Animator animator;
 
     //[SerializeField] [Range(0, 1)] float enemyshootvolume = .7f;
     [SerializeField] AudioClip enemyhitSFX;
@@ -27,7 +28,7 @@ public class ZombieHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
         ragdoll = GetComponent<Ragdoll>();
         var rigidBodies = GetComponentsInChildren<Rigidbody>();
         skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
@@ -57,6 +58,7 @@ public class ZombieHealth : MonoBehaviour
         if (currentHealth<=0.0f)
         {
             Die(direction);
+            
         }
         blinkTimer = blinkDuration;
         AudioSource.PlayClipAtPoint(enemyhitSFX, Camera.main.transform.position, enemyhitvolume);
@@ -80,7 +82,7 @@ public class ZombieHealth : MonoBehaviour
         gameObject.GetComponent<AIlocomotion>().enabled = false;
         FindObjectOfType<GameSession>().AddToScore(scoreValue);
 
-        Destroy(gameObject, 3);
+        Destroy(gameObject, 1);
 
     }
     public void StopNoise()
