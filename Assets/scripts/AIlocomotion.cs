@@ -38,12 +38,12 @@ public class AIlocomotion : MonoBehaviour
         }
         
         animator.SetFloat("Speed", agent.velocity.magnitude);
-        if(distance <=1.65)
+        if(distance <=2)
         {
             animator.SetBool("isAttacking", true);
             AudioSource.PlayClipAtPoint(attack, agent.transform.position, attackVolume);
         }
-        if(distance >1.7)
+        if(distance >2)
         {
             animator.SetBool("isAttacking", false);
         }

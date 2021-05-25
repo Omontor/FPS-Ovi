@@ -5,10 +5,11 @@ using TMPro;
 
 public class GameSession : MonoBehaviour
 {
-    int score = 0;
+    public static int score, highScore;
     private void Awake()
     {
         SetupSingleton();
+        score = 0;
         
     }
     private void SetupSingleton()
@@ -30,9 +31,20 @@ public class GameSession : MonoBehaviour
     public void AddToScore(int scoreValue)
     {
         score += scoreValue;
+        HighScore();
+        
     }
     public void ResetGame()
     {
         Destroy(gameObject);
+    }
+    public void HighScore()
+    {
+        if (score > highScore)
+            highScore = score;
+    }
+    public int GetHighScore()
+    {
+        return highScore;
     }
 }

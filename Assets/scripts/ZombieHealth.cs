@@ -15,7 +15,7 @@ public class ZombieHealth : MonoBehaviour
     public float dieForce;
     UIHealthbar healthbar;
     SkinnedMeshRenderer skinnedMeshRenderer;
-    public bool isAlive;
+    public static bool isAlive;
     public int zombieDamage = 5;
     [SerializeField] AudioClip deathSFX;
     [SerializeField] [Range(0, 1)] float deathvolume = .7f;
@@ -80,6 +80,7 @@ public class ZombieHealth : MonoBehaviour
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathvolume);
         StopNoise();
         gameObject.GetComponent<AIlocomotion>().enabled = false;
+        
         FindObjectOfType<GameSession>().AddToScore(scoreValue);
 
         Destroy(gameObject, 1);

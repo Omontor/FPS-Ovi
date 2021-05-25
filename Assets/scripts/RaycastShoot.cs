@@ -6,12 +6,12 @@ public class RaycastShoot : MonoBehaviour
 {
     // Start is called before the first frame update
     public int gunDamage = 25;
-    public float fireRate = .25f;
+    public float fireRate = .01f;
     public float weaponRange = 50.0f;
     public float force = 100f;
     public Transform gunEnd;
     private Camera fpsCam;
-    private WaitForSeconds shotDuration = new WaitForSeconds(.07f);
+    private WaitForSeconds shotDuration = new WaitForSeconds(.01f);
     public AudioSource gunAudio;
     private LineRenderer laserLine;
     private float nextFire;
@@ -31,32 +31,34 @@ public class RaycastShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isShooting && Time.time >nextFire)
+        if (!PauseMenu.isPaused)
         {
-            nextFire = Time.time + fireRate;
-            StartCoroutine(ShotEffect());
-            Vector3 rayOrigin = new Vector3(muzzle.transform.position.x, muzzle.transform.position.y, muzzle.transform.position.z);
-            RaycastHit hit;
+            if (isShooting && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                StartCoroutine(ShotEffect());
+                Vector3 rayOrigin = new Vector3(muzzle.transform.position.x, muzzle.transform.position.y, muzzle.transform.position.z);
+                RaycastHit hit;
 
-            laserLine.SetPosition(0, gunEnd.position);
+                laserLine.SetPosition(0, gunEnd.position);
 
-            if(Physics.Raycast(rayOrigin,muzzle.transform.forward, out hit, weaponRange))
-            {
-                laserLine.SetPosition(1, hit.point);
+                if (Physics.Raycast(rayOrigin, muzzle.transform.forward, out hit, weaponRange))
+                {
+                    laserLine.SetPosition(1, hit.point);
+                }
+
+                var hitBox = hit.collider.GetComponent<Hitboxbetter>();
+                if (hitBox)
+                {
+                    hitBox.OnRaycastHit(this, ray.direction);
+                }
+                else
+                {
+                    laserLine.SetPosition(1, rayOrigin + (muzzle.transform.forward * weaponRange));
+                }
+                isShooting = false;
             }
-           
-            var hitBox = hit.collider.GetComponent<Hitboxbetter>();
-            if (hitBox)
-            {
-                hitBox.OnRaycastHit(this, ray.direction);
-            }
-            else
-            {
-                laserLine.SetPosition(1, rayOrigin + (muzzle.transform.forward * weaponRange));
-            }
-            isShooting = false;
         }
-
     }
     private IEnumerator ShotEffect()
     {

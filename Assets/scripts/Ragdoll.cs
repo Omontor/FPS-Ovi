@@ -10,7 +10,7 @@ public class Ragdoll : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rigidBodies = GetComponentsInParent<Rigidbody>();
+        rigidBodies = GetComponentsInChildren<Rigidbody>();
         
         animator = GetComponent<Animator>();
 
@@ -19,17 +19,17 @@ public class Ragdoll : MonoBehaviour
 
     public void DeactivateRagdoll()
     {
-        foreach (var rigidBody in rigidBodies)
+        foreach (var rigidbody in rigidBodies)
         {
-            rigidBody.isKinematic = true;
+            rigidbody.isKinematic = true;
         }
         animator.enabled = true;
     }
     public void ActivateRagdoll()
     {
-        foreach (var rigidBody in rigidBodies)
+        foreach (var rigidbody in rigidBodies)
         {
-            rigidBody.isKinematic = false;
+            rigidbody.isKinematic = false;
         }
         animator.enabled = false;
     }

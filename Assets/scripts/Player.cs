@@ -42,22 +42,23 @@ public class Player : MonoBehaviour
     }
     void OnCollisionEnter(Collision other)
     {
-        
-        if (other.collider.gameObject.CompareTag("Zombie"))
+        if (ZombieHealth.isAlive)
         {
-            //ZombieHealth zombieHealth = other.gameObject.GetComponent<ZombieHealth>();
-            
-            //if(GameObject.Find("Zombie").isAlive==true)
+            if (other.collider.gameObject.CompareTag("Zombie"))
             {
-                PlayerTakeDamage(2);
-                healthBar.SetHealth(currentHealth);
-                AudioSource.PlayClipAtPoint(playertakedamageSFX, Camera.main.transform.position, playertakedamagevolume );
-            }
-            
-            
-            
-        }
+                //ZombieHealth zombieHealth = other.gameObject.GetComponent<ZombieHealth>();
 
+                //if(GameObject.Find("Zombie").isAlive==true)
+                {
+                    PlayerTakeDamage(2);
+                    healthBar.SetHealth(currentHealth);
+                    AudioSource.PlayClipAtPoint(playertakedamageSFX, Camera.main.transform.position, playertakedamagevolume);
+                }
+
+
+
+            }
+        }
     }
     public void AddtoHealth(int amount)
     {
@@ -70,7 +71,7 @@ public class Player : MonoBehaviour
         Debug.Log("u dead");
         FindObjectOfType<SceneLoader>().LoadNextScene();
         //Destroy(gameObject);
-        FindObjectOfType<GameSession>().ResetGame();
+        
         
     }
 }
