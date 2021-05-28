@@ -22,6 +22,7 @@ public class Spawner : MonoBehaviour
         {
             spawners[i] = transform.GetChild(i).gameObject;
         }
+        RandomTime = 2.5f;
     }
     private void SpawnEnemy()
     {
@@ -31,7 +32,7 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RandomTime = Random.Range(5, 10);
+        
     }
 
     IEnumerator RandomSpawn()

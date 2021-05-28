@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     [Header("Player")]
 
     public int maxHealth = 100;
-    public int currentHealth;
+    public float currentHealth;
     public HealthBar healthBar;
 
     
@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(currentHealth);
-        zombie = GameObject.Find  ("Zombie") ;
+        zombie = GameObject.Find  ("zombie") ;
     }
 
     // Update is called once per frame
@@ -40,17 +40,18 @@ public class Player : MonoBehaviour
             Die();
         }
     }
-    void OnCollisionEnter(Collision other)
+    void OnCollisionEnter(Collision collider)
     {
-        if (ZombieHealth.isAlive)
+        
         {
-            if (other.collider.gameObject.CompareTag("Zombie"))
+            if (collider.gameObject.CompareTag("Zombie"))
             {
-                //ZombieHealth zombieHealth = other.gameObject.GetComponent<ZombieHealth>();
-
-                //if(GameObject.Find("Zombie").isAlive==true)
+                if (ZombieHealth.isAlive==true)
+                
+                
                 {
                     PlayerTakeDamage(2);
+                    Debug.Log("You got hit");
                     healthBar.SetHealth(currentHealth);
                     AudioSource.PlayClipAtPoint(playertakedamageSFX, Camera.main.transform.position, playertakedamagevolume);
                 }
@@ -60,7 +61,7 @@ public class Player : MonoBehaviour
             }
         }
     }
-    public void AddtoHealth(int amount)
+    public void AddtoHealth(float amount)
     {
         currentHealth += amount;
     }

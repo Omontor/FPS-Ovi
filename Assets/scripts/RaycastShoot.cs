@@ -31,34 +31,51 @@ public class RaycastShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       //Vector3 rayOrigin = new Vector3(muzzle.transform.position.x, muzzle.transform.position.y, muzzle.transform.position.z);
+        Vector3 rayOrigin2 = fpsCam.ViewportToWorldPoint (new Vector3(0.5f,0.5f,0));
         if (!PauseMenu.isPaused)
         {
             if (isShooting && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
                 StartCoroutine(ShotEffect());
-                Vector3 rayOrigin = new Vector3(muzzle.transform.position.x, muzzle.transform.position.y, muzzle.transform.position.z);
+                //Vector3 rayOrigin = new Vector3(muzzle.transform.position.x, muzzle.transform.position.y, muzzle.transform.position.z);
+                
                 RaycastHit hit;
 
                 laserLine.SetPosition(0, gunEnd.position);
 
-                if (Physics.Raycast(rayOrigin, muzzle.transform.forward, out hit, weaponRange))
+                if (Physics.Raycast(rayOrigin2, fpsCam.transform.forward, out hit, weaponRange))
                 {
                     laserLine.SetPosition(1, hit.point);
+                    var hitBox = hit.collider.GetComponent<Hitboxbetter>();
+                    if (hitBox)
+                    {
+                                        hitBox.OnRaycastHit(this, ray.direction);
+                                        Debug.Log("Hit");
+                                        FindObjectOfType<Player>().AddtoHealth(.1f);
+                                        FindObjectOfType<HealthBar>().SetHealth(FindObjectOfType<Player>().currentHealth);
+
+                    }
                 }
 
-                var hitBox = hit.collider.GetComponent<Hitboxbetter>();
-                if (hitBox)
-                {
-                    hitBox.OnRaycastHit(this, ray.direction);
-                }
+                
                 else
                 {
-                    laserLine.SetPosition(1, rayOrigin + (muzzle.transform.forward * weaponRange));
+                    laserLine.SetPosition(1, rayOrigin2 + (gunEnd.transform.forward * weaponRange));
                 }
+                
+                
+                
+
+
+
+
+
                 isShooting = false;
             }
         }
+        Debug.DrawRay(rayOrigin2, gunEnd.transform.forward * weaponRange, Color.green);
     }
     private IEnumerator ShotEffect()
     {

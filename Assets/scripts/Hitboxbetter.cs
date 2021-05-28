@@ -8,18 +8,15 @@ public class Hitboxbetter : MonoBehaviour
     public ZombieHealth health;
     public void OnRaycastHit(RaycastShoot raycastShoot, Vector3 direction)
     {
-        if (ZombieHealth.isAlive)
-        {
-            health.TakeDamage(raycastShoot.gunDamage, direction);
-            FindObjectOfType<Player>().AddtoHealth(1);
-            FindObjectOfType<HealthBar>().SetHealth(FindObjectOfType<Player>().currentHealth);
+        health.TakeDamage(raycastShoot.gunDamage, direction);
+            
 
-        }
+        
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+        health = FindObjectOfType<ZombieHealth>();
     }
 
     // Update is called once per frame

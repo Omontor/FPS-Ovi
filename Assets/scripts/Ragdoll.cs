@@ -19,19 +19,21 @@ public class Ragdoll : MonoBehaviour
 
     public void DeactivateRagdoll()
     {
+        animator.enabled = true;
         foreach (var rigidbody in rigidBodies)
         {
             rigidbody.isKinematic = true;
         }
-        animator.enabled = true;
+        
     }
     public void ActivateRagdoll()
     {
+        animator.enabled = false;
         foreach (var rigidbody in rigidBodies)
         {
             rigidbody.isKinematic = false;
         }
-        animator.enabled = false;
+        
     }
     
     public void ApplyForce(Vector3 force)

@@ -83,7 +83,7 @@ public class ZombieHealth : MonoBehaviour
         
         FindObjectOfType<GameSession>().AddToScore(scoreValue);
 
-        Destroy(gameObject, 1);
+        Destroy(gameObject, 2);
 
     }
     public void StopNoise()
