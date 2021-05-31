@@ -8,9 +8,11 @@ public class MachineGunPickup : MonoBehaviour
     // Start is called before the first frame update
     public GameObject weaponSwitchButton;
     AudioSource pickedUpWeapon;
+    FirstObjectiveTextBox firstObjectiveTextBox;
     void Start()
     {
         pickedUpWeapon = GetComponent<AudioSource>();
+        firstObjectiveTextBox =FindObjectOfType<FirstObjectiveTextBox>();
     }
 
     // Update is called once per frame
@@ -25,8 +27,12 @@ public class MachineGunPickup : MonoBehaviour
             Debug.Log("You picked up the Gun");
             weaponSwitchButton.SetActive(true);
             pickedUpWeapon.Play();
-            Destroy(gameObject,1);
+            firstObjectiveTextBox.ByeText();
+            
+            Destroy(gameObject,.5f);
+            
         }
         
     }
+
 }

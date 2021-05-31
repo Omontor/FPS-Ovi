@@ -13,6 +13,27 @@ public class Hitboxbetter : MonoBehaviour
 
         
     }
+    public void OnRaycastHit(PistolRaycastShoot pistolRaycastShoot, Vector3 direction)
+    {
+        health.TakeDamage(pistolRaycastShoot.gunDamage, direction);
+
+
+
+    }
+    public void OnRaycastHit(AssaultRifleRaycastShoot assaultRifleRaycastShoot, Vector3 direction)
+    {
+        health.TakeDamage(assaultRifleRaycastShoot.gunDamage, direction);
+
+
+
+    }
+    public void OnRaycastHit(ShotgunRaycastShoot shotgunRaycastShoot, Vector3 direction)
+    {
+        health.TakeDamage(shotgunRaycastShoot.gunDamage, direction);
+
+
+
+    }
     // Start is called before the first frame update
     void Start()
     {

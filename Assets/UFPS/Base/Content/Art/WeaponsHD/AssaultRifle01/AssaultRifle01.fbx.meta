@@ -1,217 +1,597 @@
 fileFormatVersion: 2
 guid: 3d25da4cbf8ae454db23f4ecf74572e1
 ModelImporter:
-  serializedVersion: 18
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Camera
-    100004: Clip
-    100006: ClipLocator1
-    100008: ClipLocator2
-    100010: Directional Light
-    100012: FullBodyIK
-    100014: Goal
-    100016: 'Goal '
-    100018: Goal  1
-    100020: Goal  2
-    100022: Goal  3
-    100024: Goal  4
-    100026: Home
-    100028: Left
-    100030: Left_Elbow
-    100032: Left_IndexFinger01
-    100034: Left_IndexFinger02
-    100036: Left_IndexFinger03
-    100038: Left_IndexFinger04
-    100040: Left_MiddleFinger01
-    100042: Left_MiddleFinger02
-    100044: Left_MiddleFinger03
-    100046: Left_MiddleFinger04
-    100048: Left_Palm
-    100050: Left_Pinky01
-    100052: Left_Pinky02
-    100054: Left_Pinky03
-    100056: Left_Pinky04
-    100058: 'Left_PinkyFinger02 '
-    100060: 'Left_PinkyFinger03 '
-    100062: Left_RingFinger01
-    100064: Left_RingFinger02
-    100066: Left_RingFinger03
-    100068: Left_RingFinger04
-    100070: Left_Shoulder
-    100072: Left_Thumb01
-    100074: Left_Wrist_End
-    100076: Left_Wrist_Start
-    100078: LeftHandClipLocator
-    100080: Main
-    100082: Mantel
-    100084: ReloadLocator
-    100086: Right
-    100088: Right_Elbow
-    100090: Right_IndexFinger01
-    100092: Right_IndexFinger02
-    100094: Right_IndexFinger03
-    100096: Right_IndexFinger04
-    100098: Right_MiddleFinger01
-    100100: Right_MiddleFinger02
-    100102: Right_MiddleFinger03
-    100104: Right_MiddleFinger04
-    100106: Right_Palm
-    100108: Right_Pinky01
-    100110: Right_Pinky02
-    100112: Right_Pinky03
-    100114: Right_Pinky04
-    100116: Right_RingFinger01
-    100118: Right_RingFinger02
-    100120: Right_RingFinger03
-    100122: Right_RingFinger04
-    100124: Right_Shoulder
-    100126: Right_Thumb01
-    100128: Right_Thumb02
-    100130: Right_Thumb03
-    100132: Right_Wrist_End
-    100134: Right_Wrist_Start
-    100136: RightHand
-    100138: Texture Group
-    100140: Trigger
-    100142: TriggerLocator
-    100144: Untitled.lxp
-    100146: WeaponMainLocator
-    100148: 'Goal  '
-    100150: Goal   1
-    100152: Goal   2
-    100154: Goal   3
-    100156: TextureLocators
-    400000: //RootNode
-    400002: Camera
-    400004: Clip
-    400006: ClipLocator1
-    400008: ClipLocator2
-    400010: Directional Light
-    400012: FullBodyIK
-    400014: Goal
-    400016: 'Goal '
-    400018: Goal  1
-    400020: Goal  2
-    400022: Goal  3
-    400024: Goal  4
-    400026: Home
-    400028: Left
-    400030: Left_Elbow
-    400032: Left_IndexFinger01
-    400034: Left_IndexFinger02
-    400036: Left_IndexFinger03
-    400038: Left_IndexFinger04
-    400040: Left_MiddleFinger01
-    400042: Left_MiddleFinger02
-    400044: Left_MiddleFinger03
-    400046: Left_MiddleFinger04
-    400048: Left_Palm
-    400050: Left_Pinky01
-    400052: Left_Pinky02
-    400054: Left_Pinky03
-    400056: Left_Pinky04
-    400058: 'Left_PinkyFinger02 '
-    400060: 'Left_PinkyFinger03 '
-    400062: Left_RingFinger01
-    400064: Left_RingFinger02
-    400066: Left_RingFinger03
-    400068: Left_RingFinger04
-    400070: Left_Shoulder
-    400072: Left_Thumb01
-    400074: Left_Wrist_End
-    400076: Left_Wrist_Start
-    400078: LeftHandClipLocator
-    400080: Main
-    400082: Mantel
-    400084: ReloadLocator
-    400086: Right
-    400088: Right_Elbow
-    400090: Right_IndexFinger01
-    400092: Right_IndexFinger02
-    400094: Right_IndexFinger03
-    400096: Right_IndexFinger04
-    400098: Right_MiddleFinger01
-    400100: Right_MiddleFinger02
-    400102: Right_MiddleFinger03
-    400104: Right_MiddleFinger04
-    400106: Right_Palm
-    400108: Right_Pinky01
-    400110: Right_Pinky02
-    400112: Right_Pinky03
-    400114: Right_Pinky04
-    400116: Right_RingFinger01
-    400118: Right_RingFinger02
-    400120: Right_RingFinger03
-    400122: Right_RingFinger04
-    400124: Right_Shoulder
-    400126: Right_Thumb01
-    400128: Right_Thumb02
-    400130: Right_Thumb03
-    400132: Right_Wrist_End
-    400134: Right_Wrist_Start
-    400136: RightHand
-    400138: Texture Group
-    400140: Trigger
-    400142: TriggerLocator
-    400144: Untitled.lxp
-    400146: WeaponMainLocator
-    400148: 'Goal  '
-    400150: Goal   1
-    400152: Goal   2
-    400154: Goal   3
-    400156: TextureLocators
-    2300000: Clip
-    2300002: Main
-    2300004: Mantel
-    2300006: Trigger
-    3300000: Clip
-    3300002: Main
-    3300004: Mantel
-    3300006: Trigger
-    4300000: Clip
-    4300002: Trigger
-    4300004: Main
-    4300006: Mantel
-    4300008: Right
-    4300010: Left
-    7400000: Fire
-    7400002: Idle01
-    7400004: Idle02
-    7400006: Idle03
-    7400008: Idle04
-    7400010: Reload
-    7400012: ReloadEmpty
-    9500000: //RootNode
-    11100000: //RootNode
-    13700000: Left
-    13700002: Right
+  serializedVersion: 20101
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Camera
+  - first:
+      1: 100004
+    second: Clip
+  - first:
+      1: 100006
+    second: ClipLocator1
+  - first:
+      1: 100008
+    second: ClipLocator2
+  - first:
+      1: 100010
+    second: Directional Light
+  - first:
+      1: 100012
+    second: FullBodyIK
+  - first:
+      1: 100014
+    second: Goal
+  - first:
+      1: 100016
+    second: 'Goal '
+  - first:
+      1: 100018
+    second: Goal  1
+  - first:
+      1: 100020
+    second: Goal  2
+  - first:
+      1: 100022
+    second: Goal  3
+  - first:
+      1: 100024
+    second: Goal  4
+  - first:
+      1: 100026
+    second: Home
+  - first:
+      1: 100028
+    second: Left
+  - first:
+      1: 100030
+    second: Left_Elbow
+  - first:
+      1: 100032
+    second: Left_IndexFinger01
+  - first:
+      1: 100034
+    second: Left_IndexFinger02
+  - first:
+      1: 100036
+    second: Left_IndexFinger03
+  - first:
+      1: 100038
+    second: Left_IndexFinger04
+  - first:
+      1: 100040
+    second: Left_MiddleFinger01
+  - first:
+      1: 100042
+    second: Left_MiddleFinger02
+  - first:
+      1: 100044
+    second: Left_MiddleFinger03
+  - first:
+      1: 100046
+    second: Left_MiddleFinger04
+  - first:
+      1: 100048
+    second: Left_Palm
+  - first:
+      1: 100050
+    second: Left_Pinky01
+  - first:
+      1: 100052
+    second: Left_Pinky02
+  - first:
+      1: 100054
+    second: Left_Pinky03
+  - first:
+      1: 100056
+    second: Left_Pinky04
+  - first:
+      1: 100058
+    second: 'Left_PinkyFinger02 '
+  - first:
+      1: 100060
+    second: 'Left_PinkyFinger03 '
+  - first:
+      1: 100062
+    second: Left_RingFinger01
+  - first:
+      1: 100064
+    second: Left_RingFinger02
+  - first:
+      1: 100066
+    second: Left_RingFinger03
+  - first:
+      1: 100068
+    second: Left_RingFinger04
+  - first:
+      1: 100070
+    second: Left_Shoulder
+  - first:
+      1: 100072
+    second: Left_Thumb01
+  - first:
+      1: 100074
+    second: Left_Wrist_End
+  - first:
+      1: 100076
+    second: Left_Wrist_Start
+  - first:
+      1: 100078
+    second: LeftHandClipLocator
+  - first:
+      1: 100080
+    second: Main
+  - first:
+      1: 100082
+    second: Mantel
+  - first:
+      1: 100084
+    second: ReloadLocator
+  - first:
+      1: 100086
+    second: Right
+  - first:
+      1: 100088
+    second: Right_Elbow
+  - first:
+      1: 100090
+    second: Right_IndexFinger01
+  - first:
+      1: 100092
+    second: Right_IndexFinger02
+  - first:
+      1: 100094
+    second: Right_IndexFinger03
+  - first:
+      1: 100096
+    second: Right_IndexFinger04
+  - first:
+      1: 100098
+    second: Right_MiddleFinger01
+  - first:
+      1: 100100
+    second: Right_MiddleFinger02
+  - first:
+      1: 100102
+    second: Right_MiddleFinger03
+  - first:
+      1: 100104
+    second: Right_MiddleFinger04
+  - first:
+      1: 100106
+    second: Right_Palm
+  - first:
+      1: 100108
+    second: Right_Pinky01
+  - first:
+      1: 100110
+    second: Right_Pinky02
+  - first:
+      1: 100112
+    second: Right_Pinky03
+  - first:
+      1: 100114
+    second: Right_Pinky04
+  - first:
+      1: 100116
+    second: Right_RingFinger01
+  - first:
+      1: 100118
+    second: Right_RingFinger02
+  - first:
+      1: 100120
+    second: Right_RingFinger03
+  - first:
+      1: 100122
+    second: Right_RingFinger04
+  - first:
+      1: 100124
+    second: Right_Shoulder
+  - first:
+      1: 100126
+    second: Right_Thumb01
+  - first:
+      1: 100128
+    second: Right_Thumb02
+  - first:
+      1: 100130
+    second: Right_Thumb03
+  - first:
+      1: 100132
+    second: Right_Wrist_End
+  - first:
+      1: 100134
+    second: Right_Wrist_Start
+  - first:
+      1: 100136
+    second: RightHand
+  - first:
+      1: 100138
+    second: Texture Group
+  - first:
+      1: 100140
+    second: Trigger
+  - first:
+      1: 100142
+    second: TriggerLocator
+  - first:
+      1: 100144
+    second: Untitled.lxp
+  - first:
+      1: 100146
+    second: WeaponMainLocator
+  - first:
+      1: 100148
+    second: 'Goal  '
+  - first:
+      1: 100150
+    second: Goal   1
+  - first:
+      1: 100152
+    second: Goal   2
+  - first:
+      1: 100154
+    second: Goal   3
+  - first:
+      1: 100156
+    second: TextureLocators
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Camera
+  - first:
+      4: 400004
+    second: Clip
+  - first:
+      4: 400006
+    second: ClipLocator1
+  - first:
+      4: 400008
+    second: ClipLocator2
+  - first:
+      4: 400010
+    second: Directional Light
+  - first:
+      4: 400012
+    second: FullBodyIK
+  - first:
+      4: 400014
+    second: Goal
+  - first:
+      4: 400016
+    second: 'Goal '
+  - first:
+      4: 400018
+    second: Goal  1
+  - first:
+      4: 400020
+    second: Goal  2
+  - first:
+      4: 400022
+    second: Goal  3
+  - first:
+      4: 400024
+    second: Goal  4
+  - first:
+      4: 400026
+    second: Home
+  - first:
+      4: 400028
+    second: Left
+  - first:
+      4: 400030
+    second: Left_Elbow
+  - first:
+      4: 400032
+    second: Left_IndexFinger01
+  - first:
+      4: 400034
+    second: Left_IndexFinger02
+  - first:
+      4: 400036
+    second: Left_IndexFinger03
+  - first:
+      4: 400038
+    second: Left_IndexFinger04
+  - first:
+      4: 400040
+    second: Left_MiddleFinger01
+  - first:
+      4: 400042
+    second: Left_MiddleFinger02
+  - first:
+      4: 400044
+    second: Left_MiddleFinger03
+  - first:
+      4: 400046
+    second: Left_MiddleFinger04
+  - first:
+      4: 400048
+    second: Left_Palm
+  - first:
+      4: 400050
+    second: Left_Pinky01
+  - first:
+      4: 400052
+    second: Left_Pinky02
+  - first:
+      4: 400054
+    second: Left_Pinky03
+  - first:
+      4: 400056
+    second: Left_Pinky04
+  - first:
+      4: 400058
+    second: 'Left_PinkyFinger02 '
+  - first:
+      4: 400060
+    second: 'Left_PinkyFinger03 '
+  - first:
+      4: 400062
+    second: Left_RingFinger01
+  - first:
+      4: 400064
+    second: Left_RingFinger02
+  - first:
+      4: 400066
+    second: Left_RingFinger03
+  - first:
+      4: 400068
+    second: Left_RingFinger04
+  - first:
+      4: 400070
+    second: Left_Shoulder
+  - first:
+      4: 400072
+    second: Left_Thumb01
+  - first:
+      4: 400074
+    second: Left_Wrist_End
+  - first:
+      4: 400076
+    second: Left_Wrist_Start
+  - first:
+      4: 400078
+    second: LeftHandClipLocator
+  - first:
+      4: 400080
+    second: Main
+  - first:
+      4: 400082
+    second: Mantel
+  - first:
+      4: 400084
+    second: ReloadLocator
+  - first:
+      4: 400086
+    second: Right
+  - first:
+      4: 400088
+    second: Right_Elbow
+  - first:
+      4: 400090
+    second: Right_IndexFinger01
+  - first:
+      4: 400092
+    second: Right_IndexFinger02
+  - first:
+      4: 400094
+    second: Right_IndexFinger03
+  - first:
+      4: 400096
+    second: Right_IndexFinger04
+  - first:
+      4: 400098
+    second: Right_MiddleFinger01
+  - first:
+      4: 400100
+    second: Right_MiddleFinger02
+  - first:
+      4: 400102
+    second: Right_MiddleFinger03
+  - first:
+      4: 400104
+    second: Right_MiddleFinger04
+  - first:
+      4: 400106
+    second: Right_Palm
+  - first:
+      4: 400108
+    second: Right_Pinky01
+  - first:
+      4: 400110
+    second: Right_Pinky02
+  - first:
+      4: 400112
+    second: Right_Pinky03
+  - first:
+      4: 400114
+    second: Right_Pinky04
+  - first:
+      4: 400116
+    second: Right_RingFinger01
+  - first:
+      4: 400118
+    second: Right_RingFinger02
+  - first:
+      4: 400120
+    second: Right_RingFinger03
+  - first:
+      4: 400122
+    second: Right_RingFinger04
+  - first:
+      4: 400124
+    second: Right_Shoulder
+  - first:
+      4: 400126
+    second: Right_Thumb01
+  - first:
+      4: 400128
+    second: Right_Thumb02
+  - first:
+      4: 400130
+    second: Right_Thumb03
+  - first:
+      4: 400132
+    second: Right_Wrist_End
+  - first:
+      4: 400134
+    second: Right_Wrist_Start
+  - first:
+      4: 400136
+    second: RightHand
+  - first:
+      4: 400138
+    second: Texture Group
+  - first:
+      4: 400140
+    second: Trigger
+  - first:
+      4: 400142
+    second: TriggerLocator
+  - first:
+      4: 400144
+    second: Untitled.lxp
+  - first:
+      4: 400146
+    second: WeaponMainLocator
+  - first:
+      4: 400148
+    second: 'Goal  '
+  - first:
+      4: 400150
+    second: Goal   1
+  - first:
+      4: 400152
+    second: Goal   2
+  - first:
+      4: 400154
+    second: Goal   3
+  - first:
+      4: 400156
+    second: TextureLocators
+  - first:
+      23: 2300000
+    second: Clip
+  - first:
+      23: 2300002
+    second: Main
+  - first:
+      23: 2300004
+    second: Mantel
+  - first:
+      23: 2300006
+    second: Trigger
+  - first:
+      33: 3300000
+    second: Clip
+  - first:
+      33: 3300002
+    second: Main
+  - first:
+      33: 3300004
+    second: Mantel
+  - first:
+      33: 3300006
+    second: Trigger
+  - first:
+      43: 4300000
+    second: Clip
+  - first:
+      43: 4300002
+    second: Trigger
+  - first:
+      43: 4300004
+    second: Main
+  - first:
+      43: 4300006
+    second: Mantel
+  - first:
+      43: 4300008
+    second: Right
+  - first:
+      43: 4300010
+    second: Left
+  - first:
+      74: 7400000
+    second: Fire
+  - first:
+      74: 7400002
+    second: Idle01
+  - first:
+      74: 7400004
+    second: Idle02
+  - first:
+      74: 7400006
+    second: Idle03
+  - first:
+      74: 7400008
+    second: Idle04
+  - first:
+      74: 7400010
+    second: Reload
+  - first:
+      74: 7400012
+    second: ReloadEmpty
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Left
+  - first:
+      137: 13700002
+    second: Right
+  externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    animationCompression: 0
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
     animationRotationError: 0
     animationPositionError: 0
     animationScaleError: 0
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: Fire
       takeName: modo_Anim
-      firstFrame: 4.9000001
+      internalID: 0
+      firstFrame: 4.9
       lastFrame: 12
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -228,16 +608,19 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Idle01
       takeName: modo_Anim
-      firstFrame: 16
+      internalID: 0
+      firstFrame: 27
       lastFrame: 31
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -254,9 +637,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Idle02
       takeName: modo_Anim
+      internalID: 0
       firstFrame: 173
       lastFrame: 181
       wrapMode: 0
@@ -264,6 +649,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -280,9 +666,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Idle03
       takeName: modo_Anim
+      internalID: 0
       firstFrame: 185
       lastFrame: 196
       wrapMode: 1
@@ -290,6 +678,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -306,9 +695,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Idle04
       takeName: modo_Anim
+      internalID: 0
       firstFrame: 197
       lastFrame: 213
       wrapMode: 0
@@ -316,6 +707,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -332,9 +724,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Reload
       takeName: modo_Anim
+      internalID: 0
       firstFrame: 60
       lastFrame: 94
       wrapMode: 0
@@ -342,6 +736,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -358,9 +753,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: ReloadEmpty
       takeName: modo_Anim
+      internalID: 0
       firstFrame: 99
       lastFrame: 171
       wrapMode: 0
@@ -368,6 +765,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -384,44 +782,71 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.01
     rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 1
   userData: 
   assetBundleName: 

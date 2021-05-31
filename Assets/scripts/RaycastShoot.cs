@@ -19,13 +19,14 @@ public class RaycastShoot : MonoBehaviour
     Ray ray;
     public bool isShooting;
     public ParticleSystem muzzleflash;
+    Animator animator;
     void Start()
     {
         laserLine = GetComponent<LineRenderer>();
         gunAudio = GetComponent<AudioSource>();
         fpsCam = GetComponentInParent<Camera>();
         muzzle = GameObject.Find("muzzle");
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -38,6 +39,7 @@ public class RaycastShoot : MonoBehaviour
             if (isShooting && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
+
                 StartCoroutine(ShotEffect());
                 //Vector3 rayOrigin = new Vector3(muzzle.transform.position.x, muzzle.transform.position.y, muzzle.transform.position.z);
                 
@@ -53,7 +55,7 @@ public class RaycastShoot : MonoBehaviour
                     {
                                         hitBox.OnRaycastHit(this, ray.direction);
                                         Debug.Log("Hit");
-                                        FindObjectOfType<Player>().AddtoHealth(.1f);
+                                        FindObjectOfType<Player>().AddtoHealth(.5f);
                                         FindObjectOfType<HealthBar>().SetHealth(FindObjectOfType<Player>().currentHealth);
 
                     }
@@ -72,8 +74,10 @@ public class RaycastShoot : MonoBehaviour
 
 
 
-                isShooting = false;
+                
             }
+            isShooting = false;
+            //animator.SetBool("isShooting", false);
         }
         Debug.DrawRay(rayOrigin2, gunEnd.transform.forward * weaponRange, Color.green);
     }
@@ -88,5 +92,7 @@ public class RaycastShoot : MonoBehaviour
     {
         isShooting = true;
         muzzleflash.Emit(1);
+        //animator.SetBool("isShooting", true);
+        animator.SetTrigger("isShootingbullet");
     }
 }

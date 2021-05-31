@@ -74,7 +74,9 @@ public class ZombieHealth : MonoBehaviour
     {
         isAlive=false;
         ragdoll.ActivateRagdoll();
+        
         direction.y = 1;
+        
         ragdoll.ApplyForce(direction * dieForce);
         healthbar.gameObject.SetActive(false);
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathvolume);

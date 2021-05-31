@@ -76,6 +76,7 @@
     <Compile Include="Assets\UFPS\Base\Scripts\Demo\vp_FPSDemo3.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\vp_LocalPlayer.cs" />
     <Compile Include="Assets\scripts\Minimap.cs" />
+    <Compile Include="Assets\scripts\ShotgunRaycastShoot.cs" />
     <Compile Include="Assets\EnemyAI\Examples\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\Attributes\vp_PropertyDrawerUtility.cs.cs" />
     <Compile Include="Assets\EnemyAI\Scripts\ScriptableObjects\Decisions\EngageDecision.cs" />
@@ -129,6 +130,7 @@
     <Compile Include="Assets\scripts\getscores.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\Utility\vp_3DUtility.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Demo\vp_FPSDemo2.cs" />
+    <Compile Include="Assets\PlayerTracker.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Effects\SurfaceSystem\vp_Effect.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Powerups\vp_HealthPowerup.cs" />
     <Compile Include="Assets\EnemyAI\Scripts\LevelScripts\AlertManagement.cs" />
@@ -258,6 +260,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\UFPS\VR\Scripts\vp_VRCameraManager.cs" />
     <Compile Include="Assets\EnemyAI\Scripts\ScriptableObjects\Actions\ExitFocusAction.cs" />
+    <Compile Include="Assets\scripts\PistolRaycastShoot.cs" />
+    <Compile Include="Assets\scripts\AssaultRifleRaycastShoot.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\EnemyAI\Examples\Scripts\PlayerScripts\SimplePlayerHealth.cs" />
@@ -336,6 +340,10 @@
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Combat\vp_DamageInfo.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\vp_WeaponShooter.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Combat\vp_Grenade.cs" />
+    <Compile Include="Assets\FirstObjectiveTextBox.cs" />
+    <Compile Include="Assets\AmmoCountDisplay.cs" />
+    <Compile Include="Assets\AmmoCountDisplayAssaultRifle.cs" />
+    <Compile Include="Assets\AmmoCountDisplayShotgun.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -828,6 +836,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>Assets\UnityPackages\JsonNet\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>Library\PackageCache\com.unity.burst@1.2.0-preview.12\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.5\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
@@ -1185,8 +1196,14 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
@@ -1199,6 +1216,9 @@
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Recorder">
       <HintPath>Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
@@ -1235,6 +1255,9 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>

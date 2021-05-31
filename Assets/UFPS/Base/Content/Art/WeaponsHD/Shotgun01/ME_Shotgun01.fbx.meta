@@ -1,239 +1,663 @@
 fileFormatVersion: 2
 guid: 6d025852331c0bc4a9f2ce2c72ee7a38
 ModelImporter:
-  serializedVersion: 18
-  fileIDToRecycleName:
-    100000: FullBodyIK
-    100002: Goal
-    100004: 'Goal '
-    100006: Goal  1
-    100008: Goal  2
-    100010: Goal  3
-    100012: Goal  4
-    100014: Home
-    100016: InsertLocator
-    100018: Left
-    100020: Left_Elbow
-    100022: Left_IndexFinger01
-    100024: Left_IndexFinger02
-    100026: Left_IndexFinger03
-    100028: Left_IndexFinger04
-    100030: Left_MiddleFinger01
-    100032: Left_MiddleFinger02
-    100034: Left_MiddleFinger03
-    100036: Left_MiddleFinger04
-    100038: Left_Palm
-    100040: Left_Pinky01
-    100042: Left_Pinky02
-    100044: Left_Pinky03
-    100046: Left_Pinky04
-    100048: 'Left_PinkyFinger02 '
-    100050: 'Left_PinkyFinger03 '
-    100052: Left_RingFinger01
-    100054: Left_RingFinger02
-    100056: Left_RingFinger03
-    100058: Left_RingFinger04
-    100060: Left_Shoulder
-    100062: Left_Thumb01
-    100064: Left_Wrist_End
-    100066: Left_Wrist_Start
-    100068: //RootNode
-    100070: Mesh
-    100072: 'Mesh '
-    100074: PumpLocator
-    100076: ReloadLocator
-    100078: ReloadMesh
-    100080: Right
-    100082: Right_Elbow
-    100084: Right_Hand
-    100086: Right_IndexFinger01
-    100088: Right_IndexFinger02
-    100090: Right_IndexFinger03
-    100092: Right_IndexFinger04
-    100094: Right_MiddleFinger01
-    100096: Right_MiddleFinger02
-    100098: Right_MiddleFinger03
-    100100: Right_MiddleFinger04
-    100102: Right_Palm
-    100104: Right_Pinky01
-    100106: Right_Pinky02
-    100108: Right_Pinky03
-    100110: Right_Pinky04
-    100112: Right_RingFinger01
-    100114: Right_RingFinger02
-    100116: Right_RingFinger03
-    100118: Right_RingFinger04
-    100120: Right_Shoulder
-    100122: Right_Thumb01
-    100124: Right_Thumb02
-    100126: Right_Thumb03
-    100128: Right_Wrist_End
-    100130: Right_Wrist_Start
-    100132: SlugLocator01
-    100134: SlugLocator02
-    100136: SlugMesh
-    100138: 'SlugMesh '
-    100140: TriggerLocator
-    100142: TriggerMesh
-    100144: 'WeaponMainLocator '
-    100146: WeaponMainMesh
-    100148: InsertMesh
-    100150: PumpMesh
-    100152: SlugMesh01
-    100154: SlugMesh02
-    100156: WeaponMainLocator
-    400000: FullBodyIK
-    400002: Goal
-    400004: 'Goal '
-    400006: Goal  1
-    400008: Goal  2
-    400010: Goal  3
-    400012: Goal  4
-    400014: Home
-    400016: InsertLocator
-    400018: Left
-    400020: Left_Elbow
-    400022: Left_IndexFinger01
-    400024: Left_IndexFinger02
-    400026: Left_IndexFinger03
-    400028: Left_IndexFinger04
-    400030: Left_MiddleFinger01
-    400032: Left_MiddleFinger02
-    400034: Left_MiddleFinger03
-    400036: Left_MiddleFinger04
-    400038: Left_Palm
-    400040: Left_Pinky01
-    400042: Left_Pinky02
-    400044: Left_Pinky03
-    400046: Left_Pinky04
-    400048: 'Left_PinkyFinger02 '
-    400050: 'Left_PinkyFinger03 '
-    400052: Left_RingFinger01
-    400054: Left_RingFinger02
-    400056: Left_RingFinger03
-    400058: Left_RingFinger04
-    400060: Left_Shoulder
-    400062: Left_Thumb01
-    400064: Left_Wrist_End
-    400066: Left_Wrist_Start
-    400068: //RootNode
-    400070: Mesh
-    400072: 'Mesh '
-    400074: PumpLocator
-    400076: ReloadLocator
-    400078: ReloadMesh
-    400080: Right
-    400082: Right_Elbow
-    400084: Right_Hand
-    400086: Right_IndexFinger01
-    400088: Right_IndexFinger02
-    400090: Right_IndexFinger03
-    400092: Right_IndexFinger04
-    400094: Right_MiddleFinger01
-    400096: Right_MiddleFinger02
-    400098: Right_MiddleFinger03
-    400100: Right_MiddleFinger04
-    400102: Right_Palm
-    400104: Right_Pinky01
-    400106: Right_Pinky02
-    400108: Right_Pinky03
-    400110: Right_Pinky04
-    400112: Right_RingFinger01
-    400114: Right_RingFinger02
-    400116: Right_RingFinger03
-    400118: Right_RingFinger04
-    400120: Right_Shoulder
-    400122: Right_Thumb01
-    400124: Right_Thumb02
-    400126: Right_Thumb03
-    400128: Right_Wrist_End
-    400130: Right_Wrist_Start
-    400132: SlugLocator01
-    400134: SlugLocator02
-    400136: SlugMesh
-    400138: 'SlugMesh '
-    400140: TriggerLocator
-    400142: TriggerMesh
-    400144: 'WeaponMainLocator '
-    400146: WeaponMainMesh
-    400148: InsertMesh
-    400150: PumpMesh
-    400152: SlugMesh01
-    400154: SlugMesh02
-    400156: WeaponMainLocator
-    2300000: Mesh
-    2300002: 'Mesh '
-    2300004: ReloadMesh
-    2300006: SlugMesh
-    2300008: 'SlugMesh '
-    2300010: TriggerMesh
-    2300012: WeaponMainMesh
-    2300014: InsertMesh
-    2300016: PumpMesh
-    2300018: SlugMesh01
-    2300020: SlugMesh02
-    3300000: Mesh
-    3300002: 'Mesh '
-    3300004: ReloadMesh
-    3300006: SlugMesh
-    3300008: 'SlugMesh '
-    3300010: TriggerMesh
-    3300012: WeaponMainMesh
-    3300014: InsertMesh
-    3300016: PumpMesh
-    3300018: SlugMesh01
-    3300020: SlugMesh02
-    4300000: 'Mesh '
-    4300002: Mesh
-    4300004: TriggerMesh
-    4300006: ReloadMesh
-    4300008: WeaponMainMesh
-    4300010: SlugMesh
-    4300012: 'SlugMesh '
-    4300014: Right
-    4300016: Left
-    4300018: InsertMesh
-    4300020: PumpMesh
-    4300022: SlugMesh01
-    4300024: SlugMesh02
-    7400000: Idle01
-    7400002: Idle02
-    7400004: Idle03
-    7400006: Idle04
-    7400008: Reload01
-    7400010: Reload02
-    7400012: Fire01
-    7400014: Pump01
-    9500000: //RootNode
-    11100000: //RootNode
-    13700000: Left
-    13700002: Right
+  serializedVersion: 20101
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: FullBodyIK
+  - first:
+      1: 100002
+    second: Goal
+  - first:
+      1: 100004
+    second: 'Goal '
+  - first:
+      1: 100006
+    second: Goal  1
+  - first:
+      1: 100008
+    second: Goal  2
+  - first:
+      1: 100010
+    second: Goal  3
+  - first:
+      1: 100012
+    second: Goal  4
+  - first:
+      1: 100014
+    second: Home
+  - first:
+      1: 100016
+    second: InsertLocator
+  - first:
+      1: 100018
+    second: Left
+  - first:
+      1: 100020
+    second: Left_Elbow
+  - first:
+      1: 100022
+    second: Left_IndexFinger01
+  - first:
+      1: 100024
+    second: Left_IndexFinger02
+  - first:
+      1: 100026
+    second: Left_IndexFinger03
+  - first:
+      1: 100028
+    second: Left_IndexFinger04
+  - first:
+      1: 100030
+    second: Left_MiddleFinger01
+  - first:
+      1: 100032
+    second: Left_MiddleFinger02
+  - first:
+      1: 100034
+    second: Left_MiddleFinger03
+  - first:
+      1: 100036
+    second: Left_MiddleFinger04
+  - first:
+      1: 100038
+    second: Left_Palm
+  - first:
+      1: 100040
+    second: Left_Pinky01
+  - first:
+      1: 100042
+    second: Left_Pinky02
+  - first:
+      1: 100044
+    second: Left_Pinky03
+  - first:
+      1: 100046
+    second: Left_Pinky04
+  - first:
+      1: 100048
+    second: 'Left_PinkyFinger02 '
+  - first:
+      1: 100050
+    second: 'Left_PinkyFinger03 '
+  - first:
+      1: 100052
+    second: Left_RingFinger01
+  - first:
+      1: 100054
+    second: Left_RingFinger02
+  - first:
+      1: 100056
+    second: Left_RingFinger03
+  - first:
+      1: 100058
+    second: Left_RingFinger04
+  - first:
+      1: 100060
+    second: Left_Shoulder
+  - first:
+      1: 100062
+    second: Left_Thumb01
+  - first:
+      1: 100064
+    second: Left_Wrist_End
+  - first:
+      1: 100066
+    second: Left_Wrist_Start
+  - first:
+      1: 100068
+    second: //RootNode
+  - first:
+      1: 100070
+    second: Mesh
+  - first:
+      1: 100072
+    second: 'Mesh '
+  - first:
+      1: 100074
+    second: PumpLocator
+  - first:
+      1: 100076
+    second: ReloadLocator
+  - first:
+      1: 100078
+    second: ReloadMesh
+  - first:
+      1: 100080
+    second: Right
+  - first:
+      1: 100082
+    second: Right_Elbow
+  - first:
+      1: 100084
+    second: Right_Hand
+  - first:
+      1: 100086
+    second: Right_IndexFinger01
+  - first:
+      1: 100088
+    second: Right_IndexFinger02
+  - first:
+      1: 100090
+    second: Right_IndexFinger03
+  - first:
+      1: 100092
+    second: Right_IndexFinger04
+  - first:
+      1: 100094
+    second: Right_MiddleFinger01
+  - first:
+      1: 100096
+    second: Right_MiddleFinger02
+  - first:
+      1: 100098
+    second: Right_MiddleFinger03
+  - first:
+      1: 100100
+    second: Right_MiddleFinger04
+  - first:
+      1: 100102
+    second: Right_Palm
+  - first:
+      1: 100104
+    second: Right_Pinky01
+  - first:
+      1: 100106
+    second: Right_Pinky02
+  - first:
+      1: 100108
+    second: Right_Pinky03
+  - first:
+      1: 100110
+    second: Right_Pinky04
+  - first:
+      1: 100112
+    second: Right_RingFinger01
+  - first:
+      1: 100114
+    second: Right_RingFinger02
+  - first:
+      1: 100116
+    second: Right_RingFinger03
+  - first:
+      1: 100118
+    second: Right_RingFinger04
+  - first:
+      1: 100120
+    second: Right_Shoulder
+  - first:
+      1: 100122
+    second: Right_Thumb01
+  - first:
+      1: 100124
+    second: Right_Thumb02
+  - first:
+      1: 100126
+    second: Right_Thumb03
+  - first:
+      1: 100128
+    second: Right_Wrist_End
+  - first:
+      1: 100130
+    second: Right_Wrist_Start
+  - first:
+      1: 100132
+    second: SlugLocator01
+  - first:
+      1: 100134
+    second: SlugLocator02
+  - first:
+      1: 100136
+    second: SlugMesh
+  - first:
+      1: 100138
+    second: 'SlugMesh '
+  - first:
+      1: 100140
+    second: TriggerLocator
+  - first:
+      1: 100142
+    second: TriggerMesh
+  - first:
+      1: 100144
+    second: 'WeaponMainLocator '
+  - first:
+      1: 100146
+    second: WeaponMainMesh
+  - first:
+      1: 100148
+    second: InsertMesh
+  - first:
+      1: 100150
+    second: PumpMesh
+  - first:
+      1: 100152
+    second: SlugMesh01
+  - first:
+      1: 100154
+    second: SlugMesh02
+  - first:
+      1: 100156
+    second: WeaponMainLocator
+  - first:
+      4: 400000
+    second: FullBodyIK
+  - first:
+      4: 400002
+    second: Goal
+  - first:
+      4: 400004
+    second: 'Goal '
+  - first:
+      4: 400006
+    second: Goal  1
+  - first:
+      4: 400008
+    second: Goal  2
+  - first:
+      4: 400010
+    second: Goal  3
+  - first:
+      4: 400012
+    second: Goal  4
+  - first:
+      4: 400014
+    second: Home
+  - first:
+      4: 400016
+    second: InsertLocator
+  - first:
+      4: 400018
+    second: Left
+  - first:
+      4: 400020
+    second: Left_Elbow
+  - first:
+      4: 400022
+    second: Left_IndexFinger01
+  - first:
+      4: 400024
+    second: Left_IndexFinger02
+  - first:
+      4: 400026
+    second: Left_IndexFinger03
+  - first:
+      4: 400028
+    second: Left_IndexFinger04
+  - first:
+      4: 400030
+    second: Left_MiddleFinger01
+  - first:
+      4: 400032
+    second: Left_MiddleFinger02
+  - first:
+      4: 400034
+    second: Left_MiddleFinger03
+  - first:
+      4: 400036
+    second: Left_MiddleFinger04
+  - first:
+      4: 400038
+    second: Left_Palm
+  - first:
+      4: 400040
+    second: Left_Pinky01
+  - first:
+      4: 400042
+    second: Left_Pinky02
+  - first:
+      4: 400044
+    second: Left_Pinky03
+  - first:
+      4: 400046
+    second: Left_Pinky04
+  - first:
+      4: 400048
+    second: 'Left_PinkyFinger02 '
+  - first:
+      4: 400050
+    second: 'Left_PinkyFinger03 '
+  - first:
+      4: 400052
+    second: Left_RingFinger01
+  - first:
+      4: 400054
+    second: Left_RingFinger02
+  - first:
+      4: 400056
+    second: Left_RingFinger03
+  - first:
+      4: 400058
+    second: Left_RingFinger04
+  - first:
+      4: 400060
+    second: Left_Shoulder
+  - first:
+      4: 400062
+    second: Left_Thumb01
+  - first:
+      4: 400064
+    second: Left_Wrist_End
+  - first:
+      4: 400066
+    second: Left_Wrist_Start
+  - first:
+      4: 400068
+    second: //RootNode
+  - first:
+      4: 400070
+    second: Mesh
+  - first:
+      4: 400072
+    second: 'Mesh '
+  - first:
+      4: 400074
+    second: PumpLocator
+  - first:
+      4: 400076
+    second: ReloadLocator
+  - first:
+      4: 400078
+    second: ReloadMesh
+  - first:
+      4: 400080
+    second: Right
+  - first:
+      4: 400082
+    second: Right_Elbow
+  - first:
+      4: 400084
+    second: Right_Hand
+  - first:
+      4: 400086
+    second: Right_IndexFinger01
+  - first:
+      4: 400088
+    second: Right_IndexFinger02
+  - first:
+      4: 400090
+    second: Right_IndexFinger03
+  - first:
+      4: 400092
+    second: Right_IndexFinger04
+  - first:
+      4: 400094
+    second: Right_MiddleFinger01
+  - first:
+      4: 400096
+    second: Right_MiddleFinger02
+  - first:
+      4: 400098
+    second: Right_MiddleFinger03
+  - first:
+      4: 400100
+    second: Right_MiddleFinger04
+  - first:
+      4: 400102
+    second: Right_Palm
+  - first:
+      4: 400104
+    second: Right_Pinky01
+  - first:
+      4: 400106
+    second: Right_Pinky02
+  - first:
+      4: 400108
+    second: Right_Pinky03
+  - first:
+      4: 400110
+    second: Right_Pinky04
+  - first:
+      4: 400112
+    second: Right_RingFinger01
+  - first:
+      4: 400114
+    second: Right_RingFinger02
+  - first:
+      4: 400116
+    second: Right_RingFinger03
+  - first:
+      4: 400118
+    second: Right_RingFinger04
+  - first:
+      4: 400120
+    second: Right_Shoulder
+  - first:
+      4: 400122
+    second: Right_Thumb01
+  - first:
+      4: 400124
+    second: Right_Thumb02
+  - first:
+      4: 400126
+    second: Right_Thumb03
+  - first:
+      4: 400128
+    second: Right_Wrist_End
+  - first:
+      4: 400130
+    second: Right_Wrist_Start
+  - first:
+      4: 400132
+    second: SlugLocator01
+  - first:
+      4: 400134
+    second: SlugLocator02
+  - first:
+      4: 400136
+    second: SlugMesh
+  - first:
+      4: 400138
+    second: 'SlugMesh '
+  - first:
+      4: 400140
+    second: TriggerLocator
+  - first:
+      4: 400142
+    second: TriggerMesh
+  - first:
+      4: 400144
+    second: 'WeaponMainLocator '
+  - first:
+      4: 400146
+    second: WeaponMainMesh
+  - first:
+      4: 400148
+    second: InsertMesh
+  - first:
+      4: 400150
+    second: PumpMesh
+  - first:
+      4: 400152
+    second: SlugMesh01
+  - first:
+      4: 400154
+    second: SlugMesh02
+  - first:
+      4: 400156
+    second: WeaponMainLocator
+  - first:
+      23: 2300000
+    second: Mesh
+  - first:
+      23: 2300002
+    second: 'Mesh '
+  - first:
+      23: 2300004
+    second: ReloadMesh
+  - first:
+      23: 2300006
+    second: SlugMesh
+  - first:
+      23: 2300008
+    second: 'SlugMesh '
+  - first:
+      23: 2300010
+    second: TriggerMesh
+  - first:
+      23: 2300012
+    second: WeaponMainMesh
+  - first:
+      23: 2300014
+    second: InsertMesh
+  - first:
+      23: 2300016
+    second: PumpMesh
+  - first:
+      23: 2300018
+    second: SlugMesh01
+  - first:
+      23: 2300020
+    second: SlugMesh02
+  - first:
+      33: 3300000
+    second: Mesh
+  - first:
+      33: 3300002
+    second: 'Mesh '
+  - first:
+      33: 3300004
+    second: ReloadMesh
+  - first:
+      33: 3300006
+    second: SlugMesh
+  - first:
+      33: 3300008
+    second: 'SlugMesh '
+  - first:
+      33: 3300010
+    second: TriggerMesh
+  - first:
+      33: 3300012
+    second: WeaponMainMesh
+  - first:
+      33: 3300014
+    second: InsertMesh
+  - first:
+      33: 3300016
+    second: PumpMesh
+  - first:
+      33: 3300018
+    second: SlugMesh01
+  - first:
+      33: 3300020
+    second: SlugMesh02
+  - first:
+      43: 4300000
+    second: 'Mesh '
+  - first:
+      43: 4300002
+    second: Mesh
+  - first:
+      43: 4300004
+    second: TriggerMesh
+  - first:
+      43: 4300006
+    second: ReloadMesh
+  - first:
+      43: 4300008
+    second: WeaponMainMesh
+  - first:
+      43: 4300010
+    second: SlugMesh
+  - first:
+      43: 4300012
+    second: 'SlugMesh '
+  - first:
+      43: 4300014
+    second: Right
+  - first:
+      43: 4300016
+    second: Left
+  - first:
+      43: 4300018
+    second: InsertMesh
+  - first:
+      43: 4300020
+    second: PumpMesh
+  - first:
+      43: 4300022
+    second: SlugMesh01
+  - first:
+      43: 4300024
+    second: SlugMesh02
+  - first:
+      74: 7400000
+    second: Idle01
+  - first:
+      74: 7400002
+    second: Idle02
+  - first:
+      74: 7400004
+    second: Idle03
+  - first:
+      74: 7400006
+    second: Idle04
+  - first:
+      74: 7400008
+    second: Reload01
+  - first:
+      74: 7400010
+    second: Reload02
+  - first:
+      74: 7400012
+    second: Fire01
+  - first:
+      74: 7400014
+    second: Pump01
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Left
+  - first:
+      137: 13700002
+    second: Right
+  externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    animationCompression: 0
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: Idle01
       takeName: modo_Anim
-      firstFrame: 5
+      internalID: 0
+      firstFrame: 26
       lastFrame: 34
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -250,9 +674,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Idle02
       takeName: modo_Anim
+      internalID: 0
       firstFrame: 36
       lastFrame: 50
       wrapMode: 0
@@ -260,6 +686,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -276,9 +703,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Idle03
       takeName: modo_Anim
+      internalID: 0
       firstFrame: 52
       lastFrame: 72
       wrapMode: 0
@@ -286,6 +715,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -302,9 +732,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Idle04
       takeName: modo_Anim
+      internalID: 0
       firstFrame: 75
       lastFrame: 85
       wrapMode: 0
@@ -312,6 +744,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -328,9 +761,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Reload01
       takeName: modo_Anim
+      internalID: 0
       firstFrame: 95
       lastFrame: 134
       wrapMode: 0
@@ -338,6 +773,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -354,9 +790,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Reload02
       takeName: modo_Anim
+      internalID: 0
       firstFrame: 137
       lastFrame: 176
       wrapMode: 0
@@ -364,6 +802,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -380,9 +819,11 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Fire01
       takeName: modo_Anim
+      internalID: 0
       firstFrame: 176
       lastFrame: 194
       wrapMode: 0
@@ -390,6 +831,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -406,44 +848,441 @@ ModelImporter:
       transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
-    skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    skeleton:
+    - name: ME_Shotgun01(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Home
+      parentName: ME_Shotgun01(Clone)
+      position: {x: -0.046431642, y: 1.1938374, z: -0.05840352}
+      rotation: {x: 0.07701008, y: 0.5501369, z: -0.14941376, w: 0.8179819}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FullBodyIK
+      parentName: Home
+      position: {x: -5.551115e-17, y: 0, z: 5.551115e-17}
+      rotation: {x: 4.510281e-17, y: -5.551115e-17, z: -6.938894e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Shoulder
+      parentName: Home
+      position: {x: 0.19503206, y: -0.21846178, z: 0.13382958}
+      rotation: {x: 0.29883313, y: 0.4066892, z: -0.55414957, w: 0.66198266}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Elbow
+      parentName: Right_Shoulder
+      position: {x: 0.000000011170223, y: 0.0000000089714245, z: 0.50726545}
+      rotation: {x: 0.11380772, y: 0.019046243, z: 0.57082564, w: 0.81292266}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Wrist_Start
+      parentName: Right_Elbow
+      position: {x: 0.00037594247, y: -0.000179756, z: 0.41184413}
+      rotation: {x: 0.122329116, y: 0.22021317, z: 0.08438288, w: 0.964065}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Wrist_End
+      parentName: Right_Wrist_Start
+      position: {x: -0.0026000026, y: 0.0004999809, z: 0.0322}
+      rotation: {x: -0.6176007, y: -0.4552619, z: 0.47303873, w: 0.4330594}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Palm
+      parentName: Right_Wrist_End
+      position: {x: -0.0000046920113, y: 0.000030271662, z: 0.06064538}
+      rotation: {x: 0.07636408, y: 0.011194169, z: 0.0067259697, w: 0.9969945}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Hand
+      parentName: Right_Palm
+      position: {x: 0.0013030467, y: -0.009225723, z: -0.05992535}
+      rotation: {x: 0.0023748449, y: -0.00012512694, z: 0.00017749144, w: 0.9999972}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: InsertLocator
+      parentName: Right_Hand
+      position: {x: -0.06380207, y: 0.1307674, z: 0.3171876}
+      rotation: {x: -0.15212339, y: 2.6904759e-17, z: 7.6513404e-18, w: 0.98836154}
+      scale: {x: 1, y: 1, z: 1}
+    - name: InsertMesh
+      parentName: InsertLocator
+      position: {x: 0.0013030467, y: -0.009225723, z: -0.05992535}
+      rotation: {x: 8.413409e-17, y: -3.4694473e-17, z: 5.421011e-20, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PumpLocator
+      parentName: Right_Hand
+      position: {x: -0.065852076, y: 0.26986852, z: 0.7511571}
+      rotation: {x: -0.15371622, y: 0.0042219693, z: -0.0033717682, w: 0.9881003}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PumpMesh
+      parentName: PumpLocator
+      position: {x: 0.065852076, y: -0.031500876, z: -0.79754233}
+      rotation: {x: 0.15212339, y: -1.8927743e-11, z: -2.5412755e-10, w: 0.98836154}
+      scale: {x: 1, y: 1, z: 1}
+    - name: TriggerLocator
+      parentName: Right_Hand
+      position: {x: -0.062726125, y: 0.08408987, z: 0.2193802}
+      rotation: {x: -0.15212339, y: -7.9167606e-19, z: 5.1436018e-18, w: 0.98836154}
+      scale: {x: 1, y: 1, z: 1}
+    - name: TriggerMesh
+      parentName: TriggerLocator
+      position: {x: 0.058474082, y: -0.04726381, z: -0.2335332}
+      rotation: {x: -4.2934406e-17, y: 3.4694473e-17, z: 7.2099444e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ReloadLocator
+      parentName: Right_Hand
+      position: {x: -0.013690912, y: 0.2158375, z: 0.44434077}
+      rotation: {x: -0.15212339, y: 7.38592e-18, z: -2.3734998e-18, w: 0.98836154}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ReloadMesh
+      parentName: ReloadLocator
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 8.6736174e-19, y: -4.7019774e-38, z: -5.421011e-20, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WeaponMainLocator
+      parentName: Right_Hand
+      position: {x: -0.000004679234, y: 0.000030271904, z: 0.06064535}
+      rotation: {x: -2.7755576e-17, y: 6.938894e-18, z: 1.92593e-34, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WeaponMainMesh
+      parentName: WeaponMainLocator
+      position: {x: 0.007966696, y: -0.076518685, z: -0.081093}
+      rotation: {x: -0.2053084, y: -0.012060175, z: -0.0051879617, w: 0.97860926}
+      scale: {x: 0.8999954, y: 0.8999929, z: 0.89999753}
+    - name: Right_MiddleFinger01
+      parentName: Right_Palm
+      position: {x: 0.003903045, y: 0.0067742625, z: 0.05357464}
+      rotation: {x: 0.034204453, y: -0.6782037, z: -0.04325912, w: 0.7328018}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_MiddleFinger02
+      parentName: Right_MiddleFinger01
+      position: {x: 0.00000030063686, y: -0.0004997663, z: 0.08916434}
+      rotation: {x: -0.023294048, y: -0.5856503, z: -0.019366033, w: 0.80999756}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_MiddleFinger03
+      parentName: Right_MiddleFinger02
+      position: {x: 0.0000000033426044, y: 0.00000001245041, z: 0.04025148}
+      rotation: {x: -0.010653434, y: -0.23100583, z: 0.009271968, w: 0.97284985}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_MiddleFinger04
+      parentName: Right_MiddleFinger03
+      position: {x: 8.4785945e-10, y: -0.00019957618, z: 0.031193318}
+      rotation: {x: 0.031085057, y: 0.24498464, z: 0.0078522125, w: 0.9689967}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_RingFinger01
+      parentName: Right_Palm
+      position: {x: -0.0015969427, y: -0.02072571, z: 0.05357463}
+      rotation: {x: 0.08583131, y: -0.7447846, z: -0.07003219, w: 0.6580459}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_RingFinger02
+      parentName: Right_RingFinger01
+      position: {x: 0.00014351272, y: 0.00004640831, z: 0.085643955}
+      rotation: {x: 0.023187753, y: -0.5371333, z: -0.016741445, w: 0.8430124}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_RingFinger03
+      parentName: Right_RingFinger02
+      position: {x: 0.0000000015361215, y: -6.0447825e-10, z: 0.038208377}
+      rotation: {x: 0.027553605, y: -0.1505539, z: 0.04637441, w: 0.9871291}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_RingFinger04
+      parentName: Right_RingFinger03
+      position: {x: -0.00011554728, y: -0.0000149833895, z: 0.028876653}
+      rotation: {x: -0.09579457, y: 0.24494068, z: 0.004803348, w: 0.96478206}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_IndexFinger01
+      parentName: Right_Palm
+      position: {x: -0.00009694214, y: 0.037274268, z: 0.05807464}
+      rotation: {x: -0.009636448, y: -0.16958359, z: 0.044474594, w: 0.98446465}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_IndexFinger02
+      parentName: Right_IndexFinger01
+      position: {x: 0.00046853247, y: -0.000019705687, z: 0.07504853}
+      rotation: {x: -0.036720037, y: -0.10108943, z: -0.07567322, w: 0.99131536}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_IndexFinger03
+      parentName: Right_IndexFinger02
+      position: {x: 4.801103e-10, y: 0.00000001103711, z: 0.034035116}
+      rotation: {x: 0.0019665353, y: -0.22812362, z: -0.0025949806, w: 0.97362673}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_IndexFinger04
+      parentName: Right_IndexFinger03
+      position: {x: -0.0000000039718606, y: 0.000000010025652, z: 0.03013619}
+      rotation: {x: 0.043004982, y: 0.19195396, z: 0.036628913, w: 0.9797768}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Pinky01
+      parentName: Right_Palm
+      position: {x: -0.013588505, y: -0.05487527, z: 0.0545819}
+      rotation: {x: 0.075481094, y: -0.8217549, z: -0.1028587, w: 0.55537534}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Pinky02
+      parentName: Right_Pinky01
+      position: {x: 0.0001509776, y: 0.00007646105, z: 0.062959075}
+      rotation: {x: -0.03752196, y: -0.2579155, z: 0.058239456, w: 0.9636804}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Pinky03
+      parentName: Right_Pinky02
+      position: {x: -2.3140072e-10, y: 6.940864e-10, z: 0.030175941}
+      rotation: {x: 0.03014679, y: -0.3272867, z: 0.027856722, w: 0.94403315}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Pinky04
+      parentName: Right_Pinky03
+      position: {x: -0.000000007402382, y: -0.000000008940626, z: 0.028530227}
+      rotation: {x: -0.18945706, y: 0.25643188, z: -0.06988873, w: 0.9452324}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Thumb01
+      parentName: Right_Wrist_End
+      position: {x: -0.015412622, y: 0.06612945, z: 0.0459103}
+      rotation: {x: -0.30564353, y: -0.40094584, z: 0.1911456, w: 0.8421923}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Thumb02
+      parentName: Right_Thumb01
+      position: {x: 0.000000006875599, y: 0.000000006414454, z: 0.06451642}
+      rotation: {x: 0.39761424, y: -0.08988408, z: -0.18407197, w: 0.89439434}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Thumb03
+      parentName: Right_Thumb02
+      position: {x: 0.0000000010264689, y: 0.000000012240495, z: 0.044771094}
+      rotation: {x: 0.23220216, y: 0.13069645, z: 0.037961088, w: 0.96309894}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Shoulder
+      parentName: Home
+      position: {x: -0.19196796, y: -0.21846175, z: 0.13482963}
+      rotation: {x: 0.5078454, y: -0.24415675, z: 0.3452284, w: 0.75053173}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Elbow
+      parentName: Left_Shoulder
+      position: {x: -0.0015318033, y: 0.0011755207, z: 0.5103143}
+      rotation: {x: 0.028216258, y: 0.0062006116, z: 0.6841593, w: 0.7287603}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Wrist_Start
+      parentName: Left_Elbow
+      position: {x: 0.005209799, y: -0.000025842857, z: 0.4090494}
+      rotation: {x: 0.17416058, y: -0.16990542, z: -0.049982116, w: 0.96865994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Wrist_End
+      parentName: Left_Wrist_Start
+      position: {x: -0.00020001, y: 0.00029653934, z: 0.030400012}
+      rotation: {x: -0.124370545, y: 0.7776832, z: -0.013014865, w: 0.61609375}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Palm
+      parentName: Left_Wrist_End
+      position: {x: -0.00001310122, y: 0.000030261232, z: 0.06246048}
+      rotation: {x: 0.075618766, y: 0.03356251, z: -0.009437867, w: 0.99652714}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_MiddleFinger01
+      parentName: Left_Palm
+      position: {x: 0.012738683, y: 0.006596381, z: 0.053731833}
+      rotation: {x: 0.04593639, y: 0.37525985, z: -0.0028859912, w: 0.9257762}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_MiddleFinger02
+      parentName: Left_MiddleFinger01
+      position: {x: 0.0006775562, y: 0.000015802721, z: 0.08339413}
+      rotation: {x: -0.12491244, y: 0.7281968, z: -0.022248384, w: 0.6735216}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_MiddleFinger03
+      parentName: Left_MiddleFinger02
+      position: {x: -0.0000030302356, y: 0.00019996759, z: 0.043166187}
+      rotation: {x: -0.03821248, y: 0.33420137, z: -0.005459788, w: 0.9417109}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_MiddleFinger04
+      parentName: Left_MiddleFinger03
+      position: {x: 1.8227696e-10, y: -0.0000000031819372, z: 0.029303253}
+      rotation: {x: 0.030231567, y: -0.3049388, z: -0.0063513364, w: 0.95187086}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_RingFinger01
+      parentName: Left_Palm
+      position: {x: 0.016538687, y: -0.021003604, z: 0.052931838}
+      rotation: {x: 0.10230284, y: 0.5286556, z: 0.07056319, w: 0.83968943}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_RingFinger02
+      parentName: Left_RingFinger01
+      position: {x: 0.00036094917, y: 0.000024765082, z: 0.07786727}
+      rotation: {x: 0.0057905517, y: 0.7630271, z: -0.031066384, w: 0.6455936}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_RingFinger03
+      parentName: Left_RingFinger02
+      position: {x: -0.00017346072, y: -0.000009268496, z: 0.03944882}
+      rotation: {x: -0.0024744733, y: 0.09782598, z: -0.0064616962, w: 0.9951795}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_RingFinger04
+      parentName: Left_RingFinger03
+      position: {x: -0.00015070499, y: -0.000010799556, z: 0.031005425}
+      rotation: {x: -0.08481473, y: -0.30475187, z: -0.0017718489, w: 0.94864625}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_IndexFinger01
+      parentName: Left_Palm
+      position: {x: 0.0129386755, y: 0.0369964, z: 0.056931853}
+      rotation: {x: 0.0000015552296, y: 0.22116491, z: -0.13137682, w: 0.96634686}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_IndexFinger02
+      parentName: Left_IndexFinger01
+      position: {x: 0.00000002104811, y: -0.000000011616442, z: 0.071983404}
+      rotation: {x: -0.23678772, y: 0.57577795, z: 0.03934429, w: 0.78157747}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_IndexFinger03
+      parentName: Left_IndexFinger02
+      position: {x: -0.000000015772187, y: 0.000000019849962, z: 0.035937298}
+      rotation: {x: -0.00513169, y: 0.24758652, z: 0.003770149, w: 0.9688449}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_IndexFinger04
+      parentName: Left_IndexFinger03
+      position: {x: 0.00000001264815, y: -0.000000016693138, z: 0.028863324}
+      rotation: {x: -0.0019411329, y: -0.222668, z: -0.019221371, w: 0.97470295}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Pinky01
+      parentName: Left_Palm
+      position: {x: 0.022838665, y: -0.055203583, z: 0.05403185}
+      rotation: {x: 0.11608184, y: 0.7870525, z: 0.0948476, w: 0.5983956}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Pinky02
+      parentName: Left_Pinky01
+      position: {x: 0.00048501443, y: 0.000019883882, z: 0.06477502}
+      rotation: {x: -0.005688977, y: 0.5930431, z: -0.023027029, w: 0.8048213}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Pinky03
+      parentName: Left_Pinky02
+      position: {x: 0.000000011463604, y: -0.000000002862052, z: 0.027493477}
+      rotation: {x: -0.025987405, y: 0.008587122, z: 0.0020315181, w: 0.99962336}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Pinky04
+      parentName: Left_Pinky03
+      position: {x: 0.00043548737, y: 0.000015884794, z: 0.026600607}
+      rotation: {x: -0.083739445, y: -0.2062498, z: -0.00451921, w: 0.9748991}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Thumb01
+      parentName: Left_Wrist_End
+      position: {x: 0.022504088, y: 0.065867335, z: 0.045043997}
+      rotation: {x: -0.1527979, y: 0.44265953, z: -0.093467176, w: 0.8786178}
+      scale: {x: 1, y: 1, z: 1}
+    - name: 'Left_PinkyFinger02 '
+      parentName: Left_Thumb01
+      position: {x: 4.784997e-10, y: 6.8631983e-10, z: 0.06359195}
+      rotation: {x: 0.18206882, y: 0.02841626, z: 0.13014868, w: 0.9742201}
+      scale: {x: 1, y: 1, z: 1}
+    - name: 'Left_PinkyFinger03 '
+      parentName: 'Left_PinkyFinger02 '
+      position: {x: -0.00000000320166, y: -0.000000003097184, z: 0.044539236}
+      rotation: {x: 0.23753126, y: -0.12670358, z: -0.0397596, w: 0.96226}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Goal
+      parentName: ME_Shotgun01(Clone)
+      position: {x: -0.023942048, y: -0.22140357, z: 0.09953184}
+      rotation: {x: -0.041620616, y: -0.028282734, z: 0.69714004, w: 0.7151668}
+      scale: {x: 1, y: 1, z: 1}
+    - name: 'Goal '
+      parentName: ME_Shotgun01(Clone)
+      position: {x: 0.6736848, y: 0.28454807, z: -0.7369227}
+      rotation: {x: 0.42131853, y: 0.03188818, z: -0.014829924, w: 0.9062306}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Goal  1
+      parentName: ME_Shotgun01(Clone)
+      position: {x: 0.195, y: 0.33500004, z: -0.379}
+      rotation: {x: 0.32262722, y: 0.086479455, z: 0.06160564, w: 0.9405519}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Goal  2
+      parentName: ME_Shotgun01(Clone)
+      position: {x: -0.192, y: -0.04499996, z: -0.37799993}
+      rotation: {x: 0.31384724, y: -0.11953262, z: 0.01425009, w: 0.94181144}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Goal  3
+      parentName: ME_Shotgun01(Clone)
+      position: {x: 0.30300003, y: 0.4129999, z: -0.078699976}
+      rotation: {x: 0.1519482, y: -0.04741974, z: 0.0072985915, w: 0.9872233}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Goal  4
+      parentName: ME_Shotgun01(Clone)
+      position: {x: 0.45764914, y: 0.52209383, z: 0.9181632}
+      rotation: {x: 0.20573162, y: 0.25574097, z: 0.56262416, w: 0.7587655}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SlugLocator01
+      parentName: ME_Shotgun01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SlugMesh01
+      parentName: SlugLocator01
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SlugLocator02
+      parentName: ME_Shotgun01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SlugMesh02
+      parentName: SlugLocator02
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right
+      parentName: ME_Shotgun01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left
+      parentName: ME_Shotgun01(Clone)
+      position: {x: -0.0001, y: 0, z: 0.0097}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.01
     rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 1
   userData: 
   assetBundleName: 
