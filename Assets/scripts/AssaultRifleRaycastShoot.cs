@@ -45,18 +45,28 @@ public class AssaultRifleRaycastShoot : MonoBehaviour
         Vector3 rayOrigin2 = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
         if (!PauseMenu.isPaused)
         {
+            
+            
             if (isShooting && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
-                if (isReloading)
-                {
-                    return;
-                }
+                
                 if (currentAmmo <= 0)
                 {
                     StartCoroutine(Reload());
+                    isReloading = true;
+                    AudioSource.PlayClipAtPoint(reloadingSound, gameObject.transform.position, reloadingVolume);
                     return;
                 }
+                
+                
+                
+                if (isReloading)
+                {
+                   
+                    return;
+                }
+                
                 StartCoroutine(ShotEffect());
                 //Vector3 rayOrigin = new Vector3(muzzle.transform.position.x, muzzle.transform.position.y, muzzle.transform.position.z);
 
@@ -117,15 +127,18 @@ public class AssaultRifleRaycastShoot : MonoBehaviour
             currentAmmo--;
 
         }
-
+        else
+        {
+            StartCoroutine(Reload());
+        }
     }
 
     IEnumerator Reload()
     {
-        isReloading = true;
+        
         Debug.Log("Reloading");
         animator.SetBool("Reloading", true);
-        AudioSource.PlayClipAtPoint(reloadingSound, gameObject.transform.position, reloadingVolume);
+        
         yield return new WaitForSeconds(reloadTime);
         currentAmmo = maxAmmo;
         animator.SetBool("Reloading", false);

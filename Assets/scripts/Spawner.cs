@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour
 {
     public GameObject[] spawners;
     public GameObject enemy;
-    public float RandomTime;
+    public float RandomTime=8f;
 
 
 
@@ -22,7 +22,7 @@ public class Spawner : MonoBehaviour
         {
             spawners[i] = transform.GetChild(i).gameObject;
         }
-        RandomTime = 2.5f;
+        
     }
     private void SpawnEnemy()
     {

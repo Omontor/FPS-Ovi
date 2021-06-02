@@ -57,6 +57,7 @@ public class ZombieHealth : MonoBehaviour
         healthbar.SetHealthBarPercentage(currentHealth / maxHealth);
         if (currentHealth<=0.0f)
         {
+            
             Die(direction);
             
         }
@@ -72,20 +73,27 @@ public class ZombieHealth : MonoBehaviour
 
     public void Die(Vector3 direction)
     {
+        if(isAlive)
+        {
+            FindObjectOfType<GameSession>().AddToScore(scoreValue);
+
+        }
+        
         isAlive=false;
         ragdoll.ActivateRagdoll();
-        
-        direction.y = 1;
-        
+        direction.y = Random.Range(.1f,.7f);
         ragdoll.ApplyForce(direction * dieForce);
+        
+        
+        
         healthbar.gameObject.SetActive(false);
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathvolume);
         StopNoise();
-        gameObject.GetComponent<AIlocomotion>().enabled = false;
+        gameObject.GetComponent<AIlocomotion>().isTracking = false;
         
-        FindObjectOfType<GameSession>().AddToScore(scoreValue);
+        
 
-        Destroy(gameObject, 2);
+        Destroy(gameObject, .5f);
 
     }
     public void StopNoise()

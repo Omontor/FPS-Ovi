@@ -7,6 +7,7 @@ public class Ragdoll : MonoBehaviour
     Rigidbody[] rigidBodies;
     Animator animator;
     Collider[] hitcolliders;
+    AIlocomotion aIlocomotion;
     
     // Start is called before the first frame update
     void Start()
@@ -14,7 +15,7 @@ public class Ragdoll : MonoBehaviour
         rigidBodies = GetComponentsInChildren<Rigidbody>();
         hitcolliders = GetComponentsInChildren<Collider>();
         animator = GetComponent<Animator>();
-
+        aIlocomotion = FindObjectOfType<AIlocomotion>();
         DeactivateRagdoll();
     }
 
@@ -36,15 +37,17 @@ public class Ragdoll : MonoBehaviour
         }
         foreach(var collider in hitcolliders)
         {
-            Collider.Destroy(collider);
+            collider.tag = ("booty");
         }
     }
     
-    public void ApplyForce(Vector3 vector3)
+    public void ApplyForce(Vector3 force)
     {
         
         var zombiehips = gameObject.transform.Find("Zombie:Hips");
-        zombiehips.GetComponent<Rigidbody>().AddForce(vector3,ForceMode.VelocityChange);
+        
+        zombiehips.GetComponent<Rigidbody>().AddForce(force,ForceMode.VelocityChange);
+        aIlocomotion.isTracking = false;
         
     }
 

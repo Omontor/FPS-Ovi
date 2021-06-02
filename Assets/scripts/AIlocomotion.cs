@@ -14,39 +14,43 @@ public class AIlocomotion : MonoBehaviour
     public bool isAttacking = false;
     public AudioClip attack;
     public float attackVolume;
+    public bool isTracking;
     // Start is called before the first frame update
     void Start()
     {
         playerTransform = GameObject.FindWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        isTracking = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer -= Time.deltaTime;
-        float distance = Vector3.Distance(agent.nextPosition, playerTransform.position);
-        if(timer < 0.0f)
+        if (isTracking)
         {
-            float sqDistance = (playerTransform.position - agent.destination).sqrMagnitude;
-            if(sqDistance > maxDistance * maxDistance)
+            timer -= Time.deltaTime;
+            float distance = Vector3.Distance(agent.nextPosition, playerTransform.position);
+            if (timer < 0.0f)
             {
-                agent.destination = playerTransform.position;
+                float sqDistance = (playerTransform.position - agent.destination).sqrMagnitude;
+                if (sqDistance > maxDistance * maxDistance)
+                {
+                    agent.destination = playerTransform.position;
+                }
+                timer = maxTime;
             }
-            timer = maxTime;
-        }
-        
-        animator.SetFloat("Speed", agent.velocity.magnitude);
-        if(distance <=2)
-        {
-            animator.SetBool("isAttacking", true);
-            AudioSource.PlayClipAtPoint(attack, agent.transform.position, attackVolume);
-        }
-        if(distance >2)
-        {
-            animator.SetBool("isAttacking", false);
+
+            animator.SetFloat("Speed", agent.velocity.magnitude);
+            if (distance <= maxDistance)
+            {
+                animator.SetBool("isAttacking", true);
+                AudioSource.PlayClipAtPoint(attack, agent.transform.position, attackVolume);
+            }
+            if (distance > maxDistance)
+            {
+                animator.SetBool("isAttacking", false);
+            }
         }
     }
-    
 }

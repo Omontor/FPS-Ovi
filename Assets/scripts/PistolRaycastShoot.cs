@@ -55,6 +55,8 @@ public class PistolRaycastShoot : MonoBehaviour
                 if (currentAmmo <=0)
                 {
                     StartCoroutine(Reload());
+                    isReloading = true;
+                    AudioSource.PlayClipAtPoint(reloadingSound, gameObject.transform.position, reloadingVolume);
                     return;
                 }
                 StartCoroutine(ShotEffect());
@@ -121,15 +123,19 @@ public class PistolRaycastShoot : MonoBehaviour
             currentAmmo--;
             
         }
+        else
+        {
+            StartCoroutine(Reload());
+        }
         
     }
 
     IEnumerator Reload()
     {
-        isReloading = true;
+        
         Debug.Log("Reloading");
         animator.SetBool("Reloading", true);
-        AudioSource.PlayClipAtPoint(reloadingSound, gameObject.transform.position, reloadingVolume);
+        
         yield return new WaitForSeconds(reloadTime);
         currentAmmo = maxAmmo;
         animator.SetBool("Reloading", false);

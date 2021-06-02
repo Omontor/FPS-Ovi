@@ -60,6 +60,7 @@ public class ShotgunRaycastShoot : MonoBehaviour
                 if (currentAmmo <= 0)
                 {
                     StartCoroutine(Reload());
+                    AudioSource.PlayClipAtPoint(reloadingSound, gameObject.transform.position, reloadingVolume);
                     return;
                 }
                 
@@ -77,6 +78,7 @@ public class ShotgunRaycastShoot : MonoBehaviour
                     {
                         hitBox.OnRaycastHit(this, ray.direction);
                         Debug.Log("Hit");
+                        Debug.Log(ray.direction);
                         FindObjectOfType<Player>().AddtoHealth(.5f);
                         FindObjectOfType<HealthBar>().SetHealth(FindObjectOfType<Player>().currentHealth);
 
@@ -122,7 +124,10 @@ public class ShotgunRaycastShoot : MonoBehaviour
             currentAmmo--;
 
         }
-
+        else
+        {
+            StartCoroutine(Reload());
+        }
     }
 
     IEnumerator Reload()
@@ -131,7 +136,7 @@ public class ShotgunRaycastShoot : MonoBehaviour
         Debug.Log("Reloading");
         
         animator.SetBool("Reloading", true);
-        AudioSource.PlayClipAtPoint(reloadingSound, gameObject.transform.position, reloadingVolume);
+        
         yield return new WaitForSeconds(reloadTime);
         currentAmmo = maxAmmo;
         animator.SetBool("Reloading", false);
