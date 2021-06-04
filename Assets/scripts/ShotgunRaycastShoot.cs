@@ -51,7 +51,7 @@ public class ShotgunRaycastShoot : MonoBehaviour
             {
                 nextFire = Time.time + fireRate;
                 
-                StartCoroutine(ShotEffect());
+                
                 if (isReloading)
                 {
 
@@ -63,7 +63,7 @@ public class ShotgunRaycastShoot : MonoBehaviour
                     AudioSource.PlayClipAtPoint(reloadingSound, gameObject.transform.position, reloadingVolume);
                     return;
                 }
-                
+                StartCoroutine(ShotEffect());
 
 
                 RaycastHit hit;
@@ -150,5 +150,9 @@ public class ShotgunRaycastShoot : MonoBehaviour
     {
         return maxAmmo;
     }
-
+    public void Reloadbutton()
+    {
+        StartCoroutine(Reload());
+        AudioSource.PlayClipAtPoint(reloadingSound, gameObject.transform.position, reloadingVolume);
+    }
 }

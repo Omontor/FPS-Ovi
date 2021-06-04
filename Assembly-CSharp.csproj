@@ -60,6 +60,7 @@
     <Compile Include="Assets\UFPS\Base\Scripts\Effects\SurfaceSystem\vp_SurfaceManager.cs" />
     <Compile Include="Assets\EnemyAI\Examples\Scripts\LevelScripts\TopDownGameManagement.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Combat\vp_Regenerator.cs" />
+    <Compile Include="Assets\AmmoCountDisplayAssaultRifle.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\vp_FPWeapon.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\Attributes\vp_ItemAmountAttribute.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Core\Motion\vp_Perlin.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\UFPS\Base\Scripts\Core\Motion\vp_AngleBob.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Demo\vp_FPSDemoPlaceHolderMessenger.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Demo\vp_FPSDemo3.cs" />
+    <Compile Include="Assets\AmmoCountDisplay.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\vp_LocalPlayer.cs" />
     <Compile Include="Assets\scripts\Minimap.cs" />
     <Compile Include="Assets\scripts\ShotgunRaycastShoot.cs" />
@@ -118,6 +120,7 @@
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\vp_FPPistolReloader.cs" />
     <Compile Include="Assets\EnemyAI\Scripts\ScriptableObjects\Decisions\HearDecision.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\vp_Gameplay.cs" />
+    <Compile Include="Assets\AmmoCountDisplayShotgun.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\vp_FPCamera.cs" />
     <Compile Include="Assets\EnemyAI\Examples\Scripts\LevelScripts\LevelTrigger.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\Local\vp_FPInventory.cs" />
@@ -167,6 +170,7 @@
     <Compile Include="Assets\UFPS\VR\Scripts\vp_VRWeaponManager.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Inventory\vp_Inventory.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Effects\SurfaceSystem\vp_SurfaceEffect.cs" />
+    <Compile Include="Assets\FirstObjectiveTextBox.cs" />
     <Compile Include="Assets\EnemyAI\Scripts\EnemyScripts\EnemyHealth.cs" />
     <Compile Include="Assets\scripts\Ragdoll.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Combat\vp_Shooter.cs" />
@@ -340,10 +344,6 @@
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Combat\vp_DamageInfo.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Player\vp_WeaponShooter.cs" />
     <Compile Include="Assets\UFPS\Base\Scripts\Gameplay\Combat\vp_Grenade.cs" />
-    <Compile Include="Assets\FirstObjectiveTextBox.cs" />
-    <Compile Include="Assets\AmmoCountDisplay.cs" />
-    <Compile Include="Assets\AmmoCountDisplayAssaultRifle.cs" />
-    <Compile Include="Assets\AmmoCountDisplayShotgun.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

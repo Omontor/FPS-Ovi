@@ -149,4 +149,9 @@ public class PistolRaycastShoot : MonoBehaviour
     {
         return maxAmmo;
     }
+    public void Reloadbutton()
+    {
+        StartCoroutine(Reload());
+        AudioSource.PlayClipAtPoint(reloadingSound, gameObject.transform.position, reloadingVolume);
+    }
 }

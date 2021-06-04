@@ -6,10 +6,11 @@ public class Player : MonoBehaviour
 {
     [Header("Player")]
 
+    public Animator bloodSplatterFX;
     public int maxHealth = 100;
     public float currentHealth;
     public HealthBar healthBar;
-
+    
     
     [SerializeField] AudioClip playertakedamageSFX;
     
@@ -19,6 +20,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        bloodSplatterFX = GameObject.Find("blooddamage").GetComponent<Animator>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(currentHealth);
         zombie = GameObject.Find  ("zombie") ;
@@ -35,6 +37,24 @@ public class Player : MonoBehaviour
     public void PlayerTakeDamage(int amount)
     {
         currentHealth -= amount;
+
+        if(currentHealth>95)
+        {
+            bloodSplatterFX.SetBool("health100", true);
+        }
+        if(currentHealth<90)
+        {
+            bloodSplatterFX.SetBool("damage90", true);
+        }
+        if(currentHealth<66)
+        {
+            bloodSplatterFX.SetBool("damage66", true);
+        }
+        if(currentHealth<33)
+        {
+            bloodSplatterFX.SetBool("damage33",true);
+        }
+        
         if(currentHealth<=amount)
         {
             Die();

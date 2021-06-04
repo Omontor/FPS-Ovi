@@ -51,6 +51,11 @@ public class AssaultRifleRaycastShoot : MonoBehaviour
             {
                 nextFire = Time.time + fireRate;
                 
+                if (isReloading)
+                {
+                   
+                    return;
+                }
                 if (currentAmmo <= 0)
                 {
                     StartCoroutine(Reload());
@@ -61,11 +66,7 @@ public class AssaultRifleRaycastShoot : MonoBehaviour
                 
                 
                 
-                if (isReloading)
-                {
-                   
-                    return;
-                }
+                
                 
                 StartCoroutine(ShotEffect());
                 //Vector3 rayOrigin = new Vector3(muzzle.transform.position.x, muzzle.transform.position.y, muzzle.transform.position.z);
@@ -152,5 +153,9 @@ public class AssaultRifleRaycastShoot : MonoBehaviour
     {
         return maxAmmo;
     }
-
+    public void Reloadbutton()
+    {
+        StartCoroutine(Reload());
+        AudioSource.PlayClipAtPoint(reloadingSound, gameObject.transform.position, reloadingVolume);
+    }
 }
