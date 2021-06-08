@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,6 +20,7 @@ public class PistolRaycastShoot : MonoBehaviour
     Ray ray;
     public bool isShooting;
     public ParticleSystem muzzleflash;
+    [SerializeField] GameObject hitEffect;
     Animator animator;
 
     public int maxAmmo = 14;
@@ -36,6 +38,7 @@ public class PistolRaycastShoot : MonoBehaviour
         muzzle = GameObject.Find("muzzle");
         animator = GetComponent<Animator>();
         currentAmmo = maxAmmo;
+        
     }
 
     // Update is called once per frame
@@ -59,6 +62,7 @@ public class PistolRaycastShoot : MonoBehaviour
                     AudioSource.PlayClipAtPoint(reloadingSound, gameObject.transform.position, reloadingVolume);
                     return;
                 }
+                
                 StartCoroutine(ShotEffect());
                 //Vector3 rayOrigin = new Vector3(muzzle.transform.position.x, muzzle.transform.position.y, muzzle.transform.position.z);
 
@@ -73,6 +77,7 @@ public class PistolRaycastShoot : MonoBehaviour
                     if (hitBox)
                     {
                         hitBox.OnRaycastHit(this, ray.direction);
+                        CreateHitImpact(hit);
                         Debug.Log("Hit");
                         FindObjectOfType<Player>().AddtoHealth(.5f);
                         FindObjectOfType<HealthBar>().SetHealth(FindObjectOfType<Player>().currentHealth);
@@ -100,6 +105,13 @@ public class PistolRaycastShoot : MonoBehaviour
         }
         Debug.DrawRay(rayOrigin2, gunEnd.transform.forward * weaponRange, Color.green);
     }
+
+    private void CreateHitImpact(RaycastHit hit)
+    {
+        GameObject impact =Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
+        Destroy(impact, 5);
+    }
+
     private IEnumerator ShotEffect()
     {
         
@@ -113,10 +125,11 @@ public class PistolRaycastShoot : MonoBehaviour
     }
     public void Shoot()
     {
+        
         if (isReloading == false)
         {
             isShooting = true;
-            muzzleflash.Emit(1);
+            PlayMuzzleflash();
             animator.SetTrigger("isShootingbullet");
             
             
@@ -153,5 +166,9 @@ public class PistolRaycastShoot : MonoBehaviour
     {
         StartCoroutine(Reload());
         AudioSource.PlayClipAtPoint(reloadingSound, gameObject.transform.position, reloadingVolume);
+    }
+    public void PlayMuzzleflash(bool withChildren = true)
+    {
+        muzzleflash.Play(withChildren);
     }
 }

@@ -15,6 +15,7 @@ public class AIlocomotion : MonoBehaviour
     public AudioClip attack;
     public float attackVolume;
     public bool isTracking;
+    private float turnSpeed = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,7 @@ public class AIlocomotion : MonoBehaviour
                 float sqDistance = (playerTransform.position - agent.destination).sqrMagnitude;
                 if (sqDistance > maxDistance * maxDistance)
                 {
+                    FaceTarget();
                     agent.destination = playerTransform.position;
                 }
                 timer = maxTime;
@@ -44,13 +46,21 @@ public class AIlocomotion : MonoBehaviour
             animator.SetFloat("Speed", agent.velocity.magnitude);
             if (distance <= maxDistance)
             {
+                
                 animator.SetBool("isAttacking", true);
                 AudioSource.PlayClipAtPoint(attack, agent.transform.position, attackVolume);
             }
+            
             if (distance > maxDistance)
             {
                 animator.SetBool("isAttacking", false);
             }
         }
+    }
+    private void FaceTarget()
+    {
+        Vector3 direction = (playerTransform.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
     }
 }

@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour
 {
     public GameObject[] spawners;
     public GameObject enemy;
-    public float RandomTime;
+    private float RandomTime;
 
 
 
@@ -17,7 +17,7 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        RandomTime = Random.Range(3, 8);
+        RandomTime = Random.Range(8, 13);
         spawners = new GameObject[5];
         for(int i=0; i<spawners.Length; i++)
         {

@@ -20,6 +20,7 @@ public class AssaultRifleRaycastShoot : MonoBehaviour
     public bool isShooting;
     public ParticleSystem muzzleflash;
     Animator animator;
+    [SerializeField] GameObject hitEffect;
 
     public int maxAmmo = 30;
     public int currentAmmo;
@@ -82,6 +83,7 @@ public class AssaultRifleRaycastShoot : MonoBehaviour
                     if (hitBox)
                     {
                         hitBox.OnRaycastHit(this, ray.direction);
+                        CreateHitImpact(hit);
                         Debug.Log("Hit");
                         FindObjectOfType<Player>().AddtoHealth(.5f);
                         FindObjectOfType<HealthBar>().SetHealth(FindObjectOfType<Player>().currentHealth);
@@ -109,6 +111,11 @@ public class AssaultRifleRaycastShoot : MonoBehaviour
         }
         Debug.DrawRay(rayOrigin2, gunEnd.transform.forward * weaponRange, Color.green);
     }
+    private void CreateHitImpact(RaycastHit hit)
+    {
+        GameObject impact = Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
+        Destroy(impact, 5);
+    }
     private IEnumerator ShotEffect()
     {
         gunAudio.Play();
@@ -121,7 +128,7 @@ public class AssaultRifleRaycastShoot : MonoBehaviour
         if (isReloading == false)
         {
             isShooting = true;
-            muzzleflash.Emit(1);
+            PlayMuzzleflash();
             animator.SetTrigger("isShootingbullet");
 
 
@@ -157,5 +164,9 @@ public class AssaultRifleRaycastShoot : MonoBehaviour
     {
         StartCoroutine(Reload());
         AudioSource.PlayClipAtPoint(reloadingSound, gameObject.transform.position, reloadingVolume);
+    }
+    public void PlayMuzzleflash(bool withChildren = true)
+    {
+        muzzleflash.Play(withChildren);
     }
 }
